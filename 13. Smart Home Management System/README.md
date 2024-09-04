@@ -1,3 +1,0 @@
-Application: Smart Home Management System
-Objective: Develop a comprehensive application that integrates various aspects learned throughout the course. The system will manage smart home devices, including user authentication, device control, real-time status updates, and data analytics. Incorporate a web interface, a backend API, real-time data processing, and automated deployment.
-Concepts: Full integration of web development, data processing, machine learning, and deployment.
