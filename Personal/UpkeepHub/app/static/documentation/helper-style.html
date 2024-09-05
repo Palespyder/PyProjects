@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Helper Style - Stilearn Metro Documentation</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <!-- styles -->
+        <link href="../css/bootstrap.css" rel="stylesheet">
+        <link href="../css/bootstrap-responsive.css" rel="stylesheet">
+        <link href="../css/metro-bootstrap.css" rel="stylesheet">
+        <link href="../css/metro.css" rel="stylesheet">
+        <link href="../css/metro-responsive.css" rel="stylesheet">
+        <link href="../css/metro-helper.css" rel="stylesheet">
+        <link href="../css/icomoon.css" rel="stylesheet">
+        
+        <link href="../css/google-code-prettify/prettify.css" rel="stylesheet">
+        <link href="assets/css/doc.css" rel="stylesheet">
+
+        <!-- favicon -->
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="../ico/apple-touch-icon-57-precomposed.png">
+        <link rel="shortcut icon" href="../ico/favicon.png">
+
+
+        <!--[if lt IE 9]>
+          <script src="../js/html5shiv.js"></script>
+        <![endif]-->
+        
+    </head>
+
+    <body data-spy="scroll" data-target=".doc-sidebar">
+        <header>
+            <!--navbar -->
+            <div class="navbar navbar-fixed-top navbar-cyan">
+                <div class="navbar-inner">
+                    <div class="container">
+                        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </a>
+                        <a class="brand" href="getting-started.html">Documentation</a>
+                        <div class="nav-collapse collapse">
+                            <ul class="nav">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="getting-started.html">Get Started</a></li>
+                                <li><a href="layout.html">Layout</a></li>
+                                <li class="active"><a href="helper-style.html">Helper Style</a></li>
+                                <li><a href="apps-component.html">Apps Component</a></li>
+                                <li><a href="http://stilearning.com/doc/stilearn-metro/ui-lab.html">UI Lab</a></li>
+                            </ul>
+                        </div><!--/.nav-collapse -->
+                    </div>
+                </div>
+            </div><!--/.navbar -->
+        </header>
+        
+        
+        <article class="container help-fixed">
+            <div class="row">
+                <div class="span2 doc-sidebar">
+                    <!--sidebar -->
+                    <ul class="nav nav-list" data-spy="affix" data-offset-top="70">
+                        <li><a href="#usage" class="scroll">Usage</a></li>
+                    </ul><!--/.sidebar -->
+                </div><!--/.span3 -->
+
+                <div class="span10">
+                    <div class="doc-content-box">
+                        <div class="page-header">
+                            <h1 id="usage">Usage</h1>
+                        </div>
+                        <p>CSS helper contains short code (such as background, color, font size, box corner, etc) that can be used to support existing features.</p>
+                        
+                        
+                        
+                        <h3 class="text-light">Colors</h3>
+                        <ul class="list-colors">
+                            <li><span class="square bg-lime"></span> *-lime</li>
+                            <li><span class="square bg-green"></span> *-green</li>
+                            <li><span class="square bg-emerald"></span> *-emerald</li>
+                            <li><span class="square bg-teal"></span> *-teal</li>
+                            <li><span class="square bg-cyan"></span> *-cyan</li>
+                            <li><span class="square bg-cobalt"></span> *-cobalt</li>
+                            <li><span class="square bg-indigo"></span> *-indigo</li>
+                            <li><span class="square bg-violet"></span> *-violet</li>
+                            <li><span class="square bg-pink"></span> *-pink</li>
+                            <li><span class="square bg-magenta"></span> *-magenta</li>
+                            <li><span class="square bg-crimson"></span> *-crimson</li>
+                            <li><span class="square bg-red"></span> *-red</li>
+                            <li><span class="square bg-orange"></span> *-orange</li>
+                            <li><span class="square bg-amber"></span> *-amber</li>
+                            <li><span class="square bg-yellow"></span> *-yellow</li>
+                            <li><span class="square bg-brown"></span> *-brown</li>
+                            <li><span class="square bg-olive"></span> *-olive</li>
+                            <li><span class="square bg-steel"></span> *-steel</li>
+                            <li><span class="square bg-mauve"></span> *-mauve</li>
+                            <li><span class="square bg-taupe"></span> *-taupe</li>
+                            <li><span class="square bg-black"></span> *-black</li>
+                            <li><span class="square bg-silver"></span> *-silver</li>
+                            <li><span class="square bg-white"></span> *-white</li>
+                        </ul>
+                        
+                        <p>To set background color use prefix bg, for set text color use prefix color</p>
+                        <!-- code sample -->
+<pre class="prettyprint linenums">
+&lt;div class=&quot;bg-lime&quot;&gt;...&lt;/div&gt;
+&lt;span class=&quot;color-green&quot;&gt;...&lt;/span&gt;
+</pre><!-- /code sample -->
+                        
+                        
+                        <p>To set border color use prefix border (if the object doesnt have border, add class <code>bordered</code> to add border)</p>
+                        <p>Change border size with class <code>border-2x</code> or <code>border-3x</code></p>
+                        <div class="row-fluid list-borders">
+                            <div class="span3 border-emerald"> </div>
+                            <div class="span3 border-black"></div>
+                            <div class="span3 border-magenta"></div>
+                            <div class="span3 border-orange"></div>
+                        </div>
+                        <!-- code sample -->
+<pre class="prettyprint linenums">
+&lt;div class=&quot;border-red&quot;&gt;...&lt;/div&gt;
+</pre><!-- /code sample -->
+
+                        <p>To set outline color for components use prefix outline, this work on hover.</p>
+                        <div class="row-fluid list-outline">
+                            <div class="span3 outline-red"> </div>
+                            <div class="span3 outline-cyan"></div>
+                            <div class="span3 outline-yellow"></div>
+                            <div class="span3 outline-green"></div>
+                        </div>
+                        <!-- code sample -->
+<pre class="prettyprint linenums">
+&lt;div class=&quot;outline-amber&quot;&gt;...&lt;/div&gt;
+</pre><!-- /code sample -->
+                    
+
+                    <h3 class="text-light">Text Helper <small class="text-light">Just some class to help text sizing</small></h3>
+                    <p class="text-small">Small text</p>
+                    <p class="text-2x">2x text</p>
+                    <p class="text-3x">3x text</p>
+                    <p class="text-4x">4x text</p>
+                    <h1 class="text-light">Light text</h1>
+                    <!-- code sample -->
+<pre class="prettyprint linenums">
+&lt;p class=&quot;text-small&quot;&gt;...&lt;/p&gt;
+&lt;p class=&quot;text-2x&quot;&gt;...&lt;/p&gt;
+&lt;p class=&quot;text-3x&quot;&gt;...&lt;/p&gt;
+&lt;p class=&quot;text-4x&quot;&gt;...&lt;/p&gt;
+&lt;h1 class=&quot;text-light&quot;&gt;...&lt;/h1&gt;
+</pre><!-- /code sample -->
+                    </div><!--/.doc-content-box -->
+                </div><!--/.span9 -->
+                
+            </div><!--/.row-fluid -->
+            
+        </article><!-- /container -->
+        
+
+        <!-- footer -->
+        <footer>
+            <div class="footer">
+                <div class="container">
+                    <p>Copyright &copy; <a href="http://stilearning.com">Stilearning</a> 2013, All rights reserved. Created with <a target="_blank" href="https://wrapbootstrap.com/theme/stilearn-metro-admin-template-WB0605G10">Stilearn Metro</a>.</p>
+                </div>
+            </div>
+        </footer><!--/.footer -->
+
+        
+        <!-- javascript
+        ================================================== -->
+        <script type="text/javascript" src="../js/jquery.min.js"></script>
+        <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+        
+        <script type="text/javascript" src="../js/google-code-prettify/prettify.js"></script>
+        <script type="text/javascript" src="assets/js/doc.js"></script>
+        <script type="text/javascript">
+            $(function(){
+                'use strict'
+                
+                // make code pretty demo
+                window.prettyPrint && prettyPrint();
+                
+            })
+        </script>
+    </body>
+</html>

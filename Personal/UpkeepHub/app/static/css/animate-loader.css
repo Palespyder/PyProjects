@@ -1,0 +1,1395 @@
+/* 
+    Document   : animate-loader
+    Created on : 07-Apr-2013, 01:39:42
+    Author     : Bent
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+
+/* loader */
+/* template loader-w8
+<div class="loader-w8">
+    <div class="wBall wBall_1">
+        <div class="wInnerBall"> </div>
+    </div>
+    <div class="wBall wBall_2">
+        <div class="wInnerBall"> </div>
+    </div>
+    <div class="wBall wBall_3">
+        <div class="wInnerBall"> </div>
+    </div>
+    <div class="wBall wBall_4">
+        <div class="wInnerBall"> </div>
+    </div>
+    <div class="wBall wBall_5">
+        <div class="wInnerBall"> </div>
+    </div>
+</div>
+*/
+.loader-w8 {
+    position: relative;
+    width: 32px;
+    height:32px;
+}
+
+.loader-w8.small {
+    position: relative;
+    width: 16px;
+    height:16px;
+}
+
+.loader-w8.large {
+    width: 64px;
+    height:64px;
+}
+
+.loader-w8 .wBall {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    opacity: 0;
+    -moz-transform: rotate(225deg);
+    -moz-animation: orbit 6.050000000000001s infinite;
+    -webkit-transform: rotate(225deg);
+    -webkit-animation: orbit 6.050000000000001s infinite;
+    -ms-transform: rotate(225deg);
+    -ms-animation: orbit 6.050000000000001s infinite;
+    -o-transform: rotate(225deg);
+    -o-animation: orbit 6.050000000000001s infinite;
+    transform: rotate(225deg);
+    animation: orbit 6.050000000000001s infinite;
+}
+.loader-w8.small .wBall {
+    width: 15px;
+    height: 15px;
+}
+.loader-w8.large .wBall {
+    width: 61px;
+    height: 61px;
+}
+
+.loader-w8 .wBall .wInnerBall{
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background: #000000;
+    left:0px;
+    top:0px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+}
+.loader-w8.small .wBall .wInnerBall{
+    width: 2px;
+    height: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    border-radius: 2px;
+}
+.loader-w8.large .wBall .wInnerBall{
+    width: 8px;
+    height: 8px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    border-radius: 8px;
+}
+
+.loader-w8 .wBall_1 {
+    -moz-animation-delay: 1.32s;
+    -webkit-animation-delay: 1.32s;
+    -ms-animation-delay: 1.32s;
+    -o-animation-delay: 1.32s;
+    animation-delay: 1.32s;
+}
+
+.loader-w8 .wBall_2 {
+    -moz-animation-delay: 0.26s;
+    -webkit-animation-delay: 0.26s;
+    -ms-animation-delay: 0.26s;
+    -o-animation-delay: 0.26s;
+    animation-delay: 0.26s;
+}
+
+.loader-w8 .wBall_3 {
+    -moz-animation-delay: 0.53s;
+    -webkit-animation-delay: 0.53s;
+    -ms-animation-delay: 0.53s;
+    -o-animation-delay: 0.53s;
+    animation-delay: 0.53s;
+}
+
+.loader-w8 .wBall_4 {
+    -moz-animation-delay: 0.79s;
+    -webkit-animation-delay: 0.79s;
+    -ms-animation-delay: 0.79s;
+    -o-animation-delay: 0.79s;
+    animation-delay: 0.79s;
+}
+
+.loader-w8 .wBall_5 {
+    -moz-animation-delay: 1.06s;
+    -webkit-animation-delay: 1.06s;
+    -ms-animation-delay: 1.06s;
+    -o-animation-delay: 1.06s;
+    animation-delay: 1.06s;
+}
+
+@-moz-keyframes orbit {
+    0% {
+    opacity: 1;
+    z-index:99;
+    -moz-transform: rotate(180deg);
+    -moz-animation-timing-function: ease-out;
+}
+
+7% {
+    opacity: 1;
+    -moz-transform: rotate(300deg);
+    -moz-animation-timing-function: linear;
+    -moz-origin:0%;
+}
+
+30% {
+    opacity: 1;
+    -moz-transform:rotate(410deg);
+    -moz-animation-timing-function: ease-in-out;
+    -moz-origin:7%;
+}
+
+39% {
+    opacity: 1;
+    -moz-transform: rotate(645deg);
+    -moz-animation-timing-function: linear;
+    -moz-origin:30%;
+}
+
+70% {
+    opacity: 1;
+    -moz-transform: rotate(770deg);
+    -moz-animation-timing-function: ease-out;
+    -moz-origin:39%;
+}
+
+75% {
+    opacity: 1;
+    -moz-transform: rotate(900deg);
+    -moz-animation-timing-function: ease-out;
+    -moz-origin:70%;
+}
+
+76% {
+    opacity: 0;
+    -moz-transform:rotate(900deg);
+}
+
+100% {
+    opacity: 0;
+    -moz-transform: rotate(900deg);
+}
+
+}
+
+@-webkit-keyframes orbit {
+    0% {
+    opacity: 1;
+    z-index:99;
+    -webkit-transform: rotate(180deg);
+    -webkit-animation-timing-function: ease-out;
+}
+
+7% {
+    opacity: 1;
+    -webkit-transform: rotate(300deg);
+    -webkit-animation-timing-function: linear;
+    -webkit-origin:0%;
+}
+
+30% {
+    opacity: 1;
+    -webkit-transform:rotate(410deg);
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-origin:7%;
+}
+
+39% {
+    opacity: 1;
+    -webkit-transform: rotate(645deg);
+    -webkit-animation-timing-function: linear;
+    -webkit-origin:30%;
+}
+
+70% {
+    opacity: 1;
+    -webkit-transform: rotate(770deg);
+    -webkit-animation-timing-function: ease-out;
+    -webkit-origin:39%;
+}
+
+75% {
+    opacity: 1;
+    -webkit-transform: rotate(900deg);
+    -webkit-animation-timing-function: ease-out;
+    -webkit-origin:70%;
+}
+
+76% {
+    opacity: 0;
+    -webkit-transform:rotate(900deg);
+}
+
+100% {
+    opacity: 0;
+    -webkit-transform: rotate(900deg);
+}
+
+}
+
+@-ms-keyframes orbit {
+    0% {
+    opacity: 1;
+    z-index:99;
+    -ms-transform: rotate(180deg);
+    -ms-animation-timing-function: ease-out;
+}
+
+7% {
+    opacity: 1;
+    -ms-transform: rotate(300deg);
+    -ms-animation-timing-function: linear;
+    -ms-origin:0%;
+}
+
+30% {
+    opacity: 1;
+    -ms-transform:rotate(410deg);
+    -ms-animation-timing-function: ease-in-out;
+    -ms-origin:7%;
+}
+
+39% {
+    opacity: 1;
+    -ms-transform: rotate(645deg);
+    -ms-animation-timing-function: linear;
+    -ms-origin:30%;
+}
+
+70% {
+    opacity: 1;
+    -ms-transform: rotate(770deg);
+    -ms-animation-timing-function: ease-out;
+    -ms-origin:39%;
+}
+
+75% {
+    opacity: 1;
+    -ms-transform: rotate(900deg);
+    -ms-animation-timing-function: ease-out;
+    -ms-origin:70%;
+}
+
+76% {
+    opacity: 0;
+    -ms-transform:rotate(900deg);
+}
+
+100% {
+    opacity: 0;
+    -ms-transform: rotate(900deg);
+}
+
+}
+
+@-o-keyframes orbit {
+    0% {
+    opacity: 1;
+    z-index:99;
+    -o-transform: rotate(180deg);
+    -o-animation-timing-function: ease-out;
+}
+
+7% {
+    opacity: 1;
+    -o-transform: rotate(300deg);
+    -o-animation-timing-function: linear;
+    -o-origin:0%;
+}
+
+30% {
+    opacity: 1;
+    -o-transform:rotate(410deg);
+    -o-animation-timing-function: ease-in-out;
+    -o-origin:7%;
+}
+
+39% {
+    opacity: 1;
+    -o-transform: rotate(645deg);
+    -o-animation-timing-function: linear;
+    -o-origin:30%;
+}
+
+70% {
+    opacity: 1;
+    -o-transform: rotate(770deg);
+    -o-animation-timing-function: ease-out;
+    -o-origin:39%;
+}
+
+75% {
+    opacity: 1;
+    -o-transform: rotate(900deg);
+    -o-animation-timing-function: ease-out;
+    -o-origin:70%;
+}
+
+76% {
+    opacity: 0;
+    -o-transform:rotate(900deg);
+}
+
+100% {
+    opacity: 0;
+    -o-transform: rotate(900deg);
+}
+
+}
+
+@keyframes orbit {
+    0% {
+    opacity: 1;
+    z-index:99;
+    transform: rotate(180deg);
+    animation-timing-function: ease-out;
+}
+
+7% {
+    opacity: 1;
+    transform: rotate(300deg);
+    animation-timing-function: linear;
+    origin:0%;
+}
+
+30% {
+    opacity: 1;
+    transform:rotate(410deg);
+    animation-timing-function: ease-in-out;
+    origin:7%;
+}
+
+39% {
+    opacity: 1;
+    transform: rotate(645deg);
+    animation-timing-function: linear;
+    origin:30%;
+}
+
+70% {
+    opacity: 1;
+    transform: rotate(770deg);
+    animation-timing-function: ease-out;
+    origin:39%;
+}
+
+75% {
+    opacity: 1;
+    transform: rotate(900deg);
+    animation-timing-function: ease-out;
+    origin:70%;
+}
+
+76% {
+    opacity: 0;
+    transform:rotate(900deg);
+}
+
+100% {
+    opacity: 0;
+    transform: rotate(900deg);
+}
+
+}
+/* end loader-w8 */
+
+
+/* template .loader-bubbling
+<div class="loader-bubbling">
+    <span class="bubbling_1"> </span>
+    <span class="bubbling_2"> </span>
+    <span class="bubbling_3"> </span>
+</div>
+*/
+.loader-bubbling {
+    text-align: center;
+    width:52px;
+    height:32px;
+}
+.loader-bubbling.small {
+    width:32px;
+    height:16px;
+}
+.loader-bubbling.large {
+    width:102px;
+    height:64px;
+}
+
+.loader-bubbling span {
+    display: inline-block;
+    vertical-align: middle;
+    width: 6px;
+    height: 6px;
+    margin: 16px auto;
+    background: #000000;
+
+    -moz-border-radius: 32px;
+    -webkit-border-radius: 32px;
+    -ms-border-radius: 32px;
+    -o-border-radius: 32px;
+    border-radius: 32px;
+
+    -moz-animation: bubbling 1.1s infinite alternate;
+    -webkit-animation: bubbling 1.1s infinite alternate;
+    -ms-animation: bubbling 1.1s infinite alternate;
+    -o-animation: bubbling 1.1s infinite alternate;
+    animation: bubbling 1.1s infinite alternate;
+}
+.loader-bubbling.small span {
+    width: 3px;
+    height: 3px;
+    margin: 8px auto;
+    -moz-border-radius: 17px;
+    -moz-animation: bubbling-small 1.1s infinite alternate;
+    -webkit-border-radius: 17px;
+    -webkit-animation: bubbling-small 1.1s infinite alternate;
+    -ms-border-radius: 17px;
+    -ms-animation: bubbling-small 1.1s infinite alternate;
+    -o-border-radius: 17px;
+    -o-animation: bubbling-small 1.1s infinite alternate;
+    border-radius: 17px;
+    animation: bubbling-small 1.1s infinite alternate;
+}
+.loader-bubbling.large span {
+    width: 13px;
+    height: 13px;
+    margin: 32px auto;
+    -moz-border-radius: 64px;
+    -moz-animation: bubbling-large 1.1s infinite alternate;
+    -webkit-border-radius: 64px;
+    -webkit-animation: bubbling-large 1.1s infinite alternate;
+    -ms-border-radius: 64px;
+    -ms-animation: bubbling-large 1.1s infinite alternate;
+    -o-border-radius: 64px;
+    -o-animation: bubbling-large 1.1s infinite alternate;
+    border-radius: 64px;
+    animation: bubbling-large 1.1s infinite alternate;
+}
+
+.loader-bubbling .bubbling_1,
+.loader-bubbling.small .bubbling_1,
+.loader-bubbling.large .bubbling_1 {
+    -moz-animation-delay: 0s;
+    -webkit-animation-delay: 0s;
+    -ms-animation-delay: 0s;
+    -o-animation-delay: 0s;
+    animation-delay: 0s;
+}
+
+.loader-bubbling .bubbling_2, 
+.loader-bubbling.small .bubbling_2,
+.loader-bubbling.large .bubbling_2{
+    -moz-animation-delay: 0.33s;
+    -webkit-animation-delay: 0.33s;
+    -ms-animation-delay: 0.33s;
+    -o-animation-delay: 0.33s;
+    animation-delay: 0.33s;
+}
+
+.loader-bubbling .bubbling_3,
+.loader-bubbling.small .bubbling_3,
+.loader-bubbling.large .bubbling_3 {
+    -moz-animation-delay: 0.66s;
+    -webkit-animation-delay: 0.66s;
+    -ms-animation-delay: 0.66s;
+    -o-animation-delay: 0.66s;
+    animation-delay: 0.66s;
+}
+
+@-moz-keyframes bubbling {
+    0% {
+        width: 6px;
+        height: 6px;
+        background-color:#000000;
+        -moz-transform: translateY(0);
+    }
+
+    100% {
+        width: 15px;
+        height: 15px;
+        background-color:#FFFFFF;
+        -moz-transform: translateY(-13px);
+    }
+
+}
+
+@-webkit-keyframes bubbling {
+    0% {
+        width: 6px;
+        height: 6px;
+        background-color:#000000;
+        -webkit-transform: translateY(0);
+    }
+
+    100% {
+        width: 15px;
+        height: 15px;
+        background-color:#FFFFFF;
+        -webkit-transform: translateY(-13px);
+    }
+
+}
+
+@-ms-keyframes bubbling {
+    0% {
+        width: 6px;
+        height: 6px;
+        background-color:#000000;
+        -ms-transform: translateY(0);
+    }
+
+    100% {
+        width: 15px;
+        height: 15px;
+        background-color:#FFFFFF;
+        -ms-transform: translateY(-13px);
+    }
+
+}
+
+@-o-keyframes bubbling {
+    0% {
+        width: 6px;
+        height: 6px;
+        background-color:#000000;
+        -o-transform: translateY(0);
+    }
+
+    100% {
+        width: 15px;
+        height: 15px;
+        background-color:#FFFFFF;
+        -o-transform: translateY(-13px);
+    }
+
+}
+
+@keyframes bubbling {
+    0% {
+        width: 6px;
+        height: 6px;
+        background-color:#000000;
+        transform: translateY(0);
+    }
+
+    100% {
+        width: 15px;
+        height: 15px;
+        background-color:#FFFFFF;
+        transform: translateY(-13px);
+    }
+
+}
+
+/* bubbling small animate*/
+@-moz-keyframes bubbling-small {
+    0% {
+        width: 3px;
+        height: 3px;
+        background-color:#000000;
+        -moz-transform: translateY(0);
+    }
+
+    100% {
+        width: 8px;
+        height: 8px;
+        background-color:#FFFFFF;
+        -moz-transform: translateY(-7px);
+    }
+
+}
+
+@-webkit-keyframes bubbling-small {
+    0% {
+        width: 3px;
+        height: 3px;
+        background-color:#000000;
+        -webkit-transform: translateY(0);
+    }
+
+    100% {
+        width: 8px;
+        height: 8px;
+        background-color:#FFFFFF;
+        -webkit-transform: translateY(-7px);
+    }
+
+}
+
+@-ms-keyframes bubbling-small {
+    0% {
+        width: 3px;
+        height: 3px;
+        background-color:#000000;
+        -ms-transform: translateY(0);
+    }
+
+    100% {
+        width: 8px;
+        height: 8px;
+        background-color:#FFFFFF;
+        -ms-transform: translateY(-7px);
+    }
+
+}
+
+@-o-keyframes bubbling-small {
+    0% {
+        width: 3px;
+        height: 3px;
+        background-color:#000000;
+        -o-transform: translateY(0);
+    }
+
+    100% {
+        width: 8px;
+        height: 8px;
+        background-color:#FFFFFF;
+        -o-transform: translateY(-7px);
+    }
+
+}
+
+@keyframes bubbling-small {
+        0% {
+        width: 3px;
+        height: 3px;
+        background-color:#000000;
+        transform: translateY(0);
+    }
+
+    100% {
+        width: 8px;
+        height: 8px;
+        background-color:#FFFFFF;
+        transform: translateY(-7px);
+    }
+
+}
+
+/* bubbling large animate*/
+@-moz-keyframes bubbling-large {
+    0% {
+    width: 13px;
+    height: 13px;
+    background-color:#000000;
+    -moz-transform: translateY(0);
+    }
+
+    100% {
+    width: 31px;
+    height: 31px;
+    background-color:#FFFFFF;
+    -moz-transform: translateY(-27px);
+    }
+
+}
+
+@-webkit-keyframes bubbling-large {
+    0% {
+    width: 13px;
+    height: 13px;
+    background-color:#000000;
+    -webkit-transform: translateY(0);
+    }
+
+    100% {
+    width: 31px;
+    height: 31px;
+    background-color:#FFFFFF;
+    -webkit-transform: translateY(-27px);
+    }
+
+}
+
+@-ms-keyframes bubbling-large {
+    0% {
+    width: 13px;
+    height: 13px;
+    background-color:#000000;
+    -ms-transform: translateY(0);
+    }
+
+    100% {
+    width: 31px;
+    height: 31px;
+    background-color:#FFFFFF;
+    -ms-transform: translateY(-27px);
+    }
+
+}
+
+@-o-keyframes bubbling-large {
+    0% {
+    width: 13px;
+    height: 13px;
+    background-color:#000000;
+    -o-transform: translateY(0);
+    }
+
+    100% {
+    width: 31px;
+    height: 31px;
+    background-color:#FFFFFF;
+    -o-transform: translateY(-27px);
+    }
+
+}
+
+@keyframes bubbling-large {
+    0% {
+    width: 13px;
+    height: 13px;
+    background-color:#000000;
+    transform: translateY(0);
+    }
+
+    100% {
+    width: 31px;
+    height: 31px;
+    background-color:#FFFFFF;
+    transform: translateY(-27px);
+    }
+
+}
+/* end loader-bubbling */
+
+/* template .loader-followingBalls
+<div class="loader-followingBalls">
+    <div class="followingBalls followingBalls_1"> </div>
+    <div class="followingBalls followingBalls_2"> </div>
+    <div class="followingBalls followingBalls_3"> </div>
+    <div class="followingBalls followingBalls_4"> </div>
+</div>
+*/
+.loader-followingBalls{
+    position:relative;
+    width:77px;
+    height:6px;
+}
+.loader-followingBalls.small{
+    width:51px;
+    height:4px;
+}
+.loader-followingBalls.large{
+    width:102px;
+    height:8px;
+}
+
+.loader-followingBalls .followingBalls{
+    background-color:#000000;
+    position:absolute;
+    top:0;
+    left:0;
+    width:6px;
+    height:6px;
+    
+    -moz-border-radius:3px;
+    -moz-animation-name:bounce-followingBalls;
+    -moz-animation-duration:1.1s;
+    -moz-animation-iteration-count:infinite;
+    -moz-animation-direction:linear;
+    
+    -webkit-border-radius:3px;
+    -webkit-animation-name:bounce-followingBalls;
+    -webkit-animation-duration:1.1s;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-direction:linear;
+    
+    -ms-border-radius:3px;
+    -ms-animation-name:bounce-followingBalls;
+    -ms-animation-duration:1.1s;
+    -ms-animation-iteration-count:infinite;
+    -ms-animation-direction:linear;
+    
+    -o-border-radius:3px;
+    -o-animation-name:bounce-followingBalls;
+    -o-animation-duration:1.1s;
+    -o-animation-iteration-count:infinite;
+    -o-animation-direction:linear;
+    
+    border-radius:3px;
+    animation-name:bounce-followingBalls;
+    animation-duration:1.1s;
+    animation-iteration-count:infinite;
+    animation-direction:linear;
+}
+.loader-followingBalls.small .followingBalls{
+    width:4px;
+    height:4px;
+    -moz-border-radius:2px;
+    -moz-animation-name:bounce-followingBalls-small;
+    
+    -webkit-border-radius:2px;
+    -webkit-animation-name:bounce-followingBalls-small;
+    
+    -ms-border-radius:2px;
+    -ms-animation-name:bounce-followingBalls-small;
+    
+    -o-border-radius:2px;
+    -o-animation-name:bounce-followingBalls-small;
+    
+    border-radius:2px;
+    animation-name:bounce-followingBalls-small;
+}
+.loader-followingBalls.large .followingBalls{
+    width:8px;
+    height:8px;
+    -moz-border-radius:4px;
+    -moz-animation-name:bounce-followingBalls-large;
+    
+    -webkit-border-radius:4px;
+    -webkit-animation-name:bounce-followingBalls-large;
+    
+    -ms-border-radius:4px;
+    -ms-animation-name:bounce-followingBalls-large;
+    
+    -o-border-radius:4px;
+    -o-animation-name:bounce-followingBalls-large;
+    
+    border-radius:4px;
+    animation-name:bounce-followingBalls-large;
+}
+
+.loader-followingBalls .followingBalls_1{
+    -moz-animation-delay:0s;
+    -webkit-animation-delay:0s;
+    -ms-animation-delay:0s;
+    -o-animation-delay:0s;
+    animation-delay:0s;
+}
+
+.loader-followingBalls .followingBalls_2{
+    -moz-animation-delay:0.11s;
+    -webkit-animation-delay:0.11s;
+    -ms-animation-delay:0.11s;
+    -o-animation-delay:0.11s;
+    animation-delay:0.11s;
+}
+
+.loader-followingBalls .followingBalls_3{
+    -moz-animation-delay:0.22s;
+    -webkit-animation-delay:0.22s;
+    -ms-animation-delay:0.22s;
+    -o-animation-delay:0.22s;
+    animation-delay:0.22s;
+}
+
+.loader-followingBalls .followingBalls_4{
+    -moz-animation-delay:0.33s;
+    -webkit-animation-delay:0.33s;
+    -ms-animation-delay:0.33s;
+    -o-animation-delay:0.33s;
+    animation-delay:0.33s;
+}
+
+@-moz-keyframes bounce-followingBalls{
+    0%{
+    left:0px;
+    background-color:#000000;
+    }
+
+    50%{
+    left:71px;
+    background-color:#FFFFFF;
+    }
+
+    100%{
+    left:0px;
+    background-color:#000000;
+    }
+
+}
+
+@-webkit-keyframes bounce-followingBalls{
+    0%{
+    left:0px;
+    background-color:#000000;
+    }
+
+    50%{
+    left:71px;
+    background-color:#FFFFFF;
+    }
+
+    100%{
+    left:0px;
+    background-color:#000000;
+    }
+
+}
+
+@-ms-keyframes bounce-followingBalls{
+    0%{
+    left:0px;
+    background-color:#000000;
+    }
+
+    50%{
+    left:71px;
+    background-color:#FFFFFF;
+    }
+
+    100%{
+    left:0px;
+    background-color:#000000;
+    }
+
+}
+
+@-o-keyframes bounce-followingBalls{
+    0%{
+    left:0px;
+    background-color:#000000;
+    }
+
+    50%{
+    left:71px;
+    background-color:#FFFFFF;
+    }
+
+    100%{
+    left:0px;
+    background-color:#000000;
+    }
+
+}
+
+@keyframes bounce-followingBalls{
+    0%{
+    left:0px;
+    background-color:#000000;
+    }
+
+    50%{
+    left:71px;
+    background-color:#FFFFFF;
+    }
+
+    100%{
+    left:0px;
+    background-color:#000000;
+    }
+
+}
+
+/* bounce-followingBalls small animate*/
+@-moz-keyframes bounce-followingBalls-small{
+    0%{
+    left:0px;
+    background-color:#000000;
+    }
+
+    50%{
+    left:48px;
+    background-color:#FFFFFF;
+    }
+
+    100%{
+    left:0px;
+    background-color:#000000;
+    }
+
+}
+
+@-webkit-keyframes bounce-followingBalls-small{
+    0%{
+    left:0px;
+    background-color:#000000;
+    }
+
+    50%{
+    left:48px;
+    background-color:#FFFFFF;
+    }
+
+    100%{
+    left:0px;
+    background-color:#000000;
+    }
+
+}
+
+@-ms-keyframes bounce-followingBalls-small{
+    0%{
+    left:0px;
+    background-color:#000000;
+    }
+
+    50%{
+    left:48px;
+    background-color:#FFFFFF;
+    }
+
+    100%{
+    left:0px;
+    background-color:#000000;
+    }
+
+}
+
+@-o-keyframes bounce-followingBalls-small{
+    0%{
+    left:0px;
+    background-color:#000000;
+    }
+
+    50%{
+    left:48px;
+    background-color:#FFFFFF;
+    }
+
+    100%{
+    left:0px;
+    background-color:#000000;
+    }
+
+}
+
+@keyframes bounce-followingBalls-small{
+    0%{
+    left:0px;
+    background-color:#000000;
+    }
+
+    50%{
+    left:48px;
+    background-color:#FFFFFF;
+    }
+
+    100%{
+    left:0px;
+    background-color:#000000;
+    }
+
+}
+
+/* bounce-followingBalls large animate*/
+@-moz-keyframes bounce-followingBalls-large{
+    0%{
+    left:0px;
+    background-color:#000000;
+    }
+
+    50%{
+    left:95px;
+    background-color:#FFFFFF;
+    }
+
+    100%{
+    left:0px;
+    background-color:#000000;
+    }
+
+}
+
+@-webkit-keyframes bounce-followingBalls-large{
+    0%{
+    left:0px;
+    background-color:#000000;
+    }
+
+    50%{
+    left:95px;
+    background-color:#FFFFFF;
+    }
+
+    100%{
+    left:0px;
+    background-color:#000000;
+    }
+
+}
+
+@-ms-keyframes bounce-followingBalls-large{
+    0%{
+    left:0px;
+    background-color:#000000;
+    }
+
+    50%{
+    left:95px;
+    background-color:#FFFFFF;
+    }
+
+    100%{
+    left:0px;
+    background-color:#000000;
+    }
+
+}
+
+@-o-keyframes bounce-followingBalls-large{
+    0%{
+    left:0px;
+    background-color:#000000;
+    }
+
+    50%{
+    left:95px;
+    background-color:#FFFFFF;
+    }
+
+    100%{
+    left:0px;
+    background-color:#000000;
+    }
+
+}
+
+@keyframes bounce-followingBalls-large{
+    0%{
+    left:0px;
+    background-color:#000000;
+    }
+
+    50%{
+    left:95px;
+    background-color:#FFFFFF;
+    }
+
+    100%{
+    left:0px;
+    background-color:#000000;
+    }
+
+}
+/* end loader-followingBalls */
+
+
+/* template .loader-squaresWave
+<div class="loader-squaresWave">
+    <div class="squaresWave squaresWave_1"> </div>
+    <div class="squaresWave squaresWave_2"> </div>
+    <div class="squaresWave squaresWave_3"> </div>
+    <div class="squaresWave squaresWave_4"> </div>
+    <div class="squaresWave squaresWave_5"> </div>
+    <div class="squaresWave squaresWave_6"> </div>
+    <div class="squaresWave squaresWave_7"> </div>
+    <div class="squaresWave squaresWave_8"> </div>
+</div>
+*/
+.loader-squaresWave{
+    position:relative;
+    width:66px;
+    height:8px
+}
+.loader-squaresWave.small{
+    width:50px;
+    height:6px
+}
+.loader-squaresWave.large{
+    width:99px;
+    height:12px
+}
+
+.squaresWave{
+    position:absolute;
+    top:0;
+    background-color:#000000;
+    width:8px;
+    height:8px;
+    
+    -moz-animation-name:bounce-squaresWave;
+    -moz-animation-duration:1.1s;
+    -moz-animation-iteration-count:infinite;
+    -moz-animation-direction:linear;
+    
+    -webkit-animation-name:bounce-squaresWave;
+    -webkit-animation-duration:1.1s;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-direction:linear;
+    
+    -ms-animation-name:bounce-squaresWave;
+    -ms-animation-duration:1.1s;
+    -ms-animation-iteration-count:infinite;
+    -ms-animation-direction:linear;
+    
+    -o-animation-name:bounce-squaresWave;
+    -o-animation-duration:1.1s;
+    -o-animation-iteration-count:infinite;
+    -o-animation-direction:linear;
+    
+    animation-name:bounce-squaresWave;
+    animation-duration:1.1s;
+    animation-iteration-count:infinite;
+    animation-direction:linear;
+}
+.loader-squaresWave.small .squaresWave{
+    width:6px;
+    height:6px;
+}
+.loader-squaresWave.large .squaresWave{
+    width:12px;
+    height:12px;
+}
+
+.loader-squaresWave .squaresWave_1{
+    left:0;
+    -moz-animation-delay:0.44s;
+    -webkit-animation-delay:0.44s;
+    -ms-animation-delay:0.44s;
+    -o-animation-delay:0.44s;
+    animation-delay:0.44s;
+}
+.loader-squaresWave.small .squaresWave_1,
+.loader-squaresWave.large .squaresWave_1{left:0px;}
+
+.loader-squaresWave .squaresWave_2{
+    left:9px;
+    -moz-animation-delay:0.55s;
+    -webkit-animation-delay:0.55s;
+    -ms-animation-delay:0.55s;
+    -o-animation-delay:0.55s;
+    animation-delay:0.55s;
+}
+.loader-squaresWave.small .squaresWave_2{left:7px;}
+.loader-squaresWave.large .squaresWave_2{left:13px;}
+
+.loader-squaresWave .squaresWave_3{
+    left:18px;
+    -moz-animation-delay:0.66s;
+    -webkit-animation-delay:0.66s;
+    -ms-animation-delay:0.66s;
+    -o-animation-delay:0.66s;
+    animation-delay:0.66s;
+}
+.loader-squaresWave.small .squaresWave_3{left:14px;}
+.loader-squaresWave.large .squaresWave_3{left:26px;}
+
+.loader-squaresWave .squaresWave_4{
+    left:27px;
+    -moz-animation-delay:0.77s;
+    -webkit-animation-delay:0.77s;
+    -ms-animation-delay:0.77s;
+    -o-animation-delay:0.77s;
+    animation-delay:0.77s;
+}
+.loader-squaresWave.small .squaresWave_4{left:21px;}
+.loader-squaresWave.large .squaresWave_4{left:39px;}
+
+.loader-squaresWave .squaresWave_5{
+    left:36px;
+    -moz-animation-delay:0.88s;
+    -webkit-animation-delay:0.88s;
+    -ms-animation-delay:0.88s;
+    -o-animation-delay:0.88s;
+    animation-delay:0.88s;
+}
+.loader-squaresWave.small .squaresWave_5{left:28px;}
+.loader-squaresWave.large .squaresWave_5{left:52px;}
+
+.loader-squaresWave .squaresWave_6{
+    left:45px;
+    -moz-animation-delay:0.99s;
+    -webkit-animation-delay:0.99s;
+    -ms-animation-delay:0.99s;
+    -o-animation-delay:0.99s;
+    animation-delay:0.99s;
+}
+.loader-squaresWave.small .squaresWave_6{left:35px;}
+.loader-squaresWave.large .squaresWave_6{left:65px;}
+
+.loader-squaresWave .squaresWave_7{
+    left:54px;
+    -moz-animation-delay:1.1s;
+    -webkit-animation-delay:1.1s;
+    -ms-animation-delay:1.1s;
+    -o-animation-delay:1.1s;
+    animation-delay:1.1s;
+}
+.loader-squaresWave.small .squaresWave_7{left:42px;}
+.loader-squaresWave.large .squaresWave_7{left:78px;}
+
+.loader-squaresWave .squaresWave_8{
+    left:63px;
+    -moz-animation-delay:1.21s;
+    -webkit-animation-delay:1.21s;
+    -ms-animation-delay:1.21s;
+    -o-animation-delay:1.21s;
+    animation-delay:1.21s;
+}
+.loader-squaresWave.small .squaresWave_8{left:49px;}
+.loader-squaresWave.large .squaresWave_8{left:91px;}
+
+@-moz-keyframes bounce-squaresWave{
+    0%{
+    background-color:#000000;
+    }
+
+    100%{
+    background-color:#FFFFFF;
+    }
+
+}
+
+@-webkit-keyframes bounce-squaresWave{
+    0%{
+    background-color:#000000;
+    }
+
+    100%{
+    background-color:#FFFFFF;
+    }
+
+}
+
+@-ms-keyframes bounce-squaresWave{
+    0%{
+    background-color:#000000;
+    }
+
+    100%{
+    background-color:#FFFFFF;
+    }
+
+}
+
+@-o-keyframes bounce-squaresWave{
+    0%{
+    background-color:#000000;
+    }
+
+    100%{
+    background-color:#FFFFFF;
+    }
+
+}
+
+@keyframes bounce-squaresWave{
+    0%{
+    background-color:#000000;
+    }
+
+    100%{
+    background-color:#FFFFFF;
+    }
+
+}
+/* end loader-squaresWave */
+
+/* end loader */

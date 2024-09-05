@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Getting Started - Stilearn Metro Documentation</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <!-- styles -->
+        <link href="../css/bootstrap.css" rel="stylesheet">
+        <link href="../css/bootstrap-responsive.css" rel="stylesheet">
+        <link href="../css/metro-bootstrap.css" rel="stylesheet">
+        <link href="../css/metro.css" rel="stylesheet">
+        <link href="../css/metro-responsive.css" rel="stylesheet">
+        <link href="../css/metro-helper.css" rel="stylesheet">
+        <link href="../css/icomoon.css" rel="stylesheet">
+        
+        <link href="../css/google-code-prettify/prettify.css" rel="stylesheet">
+        <link href="assets/css/doc.css" rel="stylesheet">
+
+        <!-- favicon -->
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="../ico/apple-touch-icon-57-precomposed.png">
+        <link rel="shortcut icon" href="../ico/favicon.png">
+
+
+        <!--[if lt IE 9]>
+          <script src="../js/html5shiv.js"></script>
+        <![endif]-->
+        
+    </head>
+
+    <body data-spy="scroll" data-target=".doc-sidebar">
+        <header>
+            <!--navbar -->
+            <div class="navbar navbar-fixed-top navbar-cyan">
+                <div class="navbar-inner">
+                    <div class="container">
+                        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </a>
+                        <a class="brand" href="getting-started.html">Documentation</a>
+                        <div class="nav-collapse collapse">
+                            <ul class="nav">
+                                <li><a href="index.html">Home</a></li>
+                                <li class="active"><a href="getting-started.html">Get Started</a></li>
+                                <li><a href="layout.html">Layout</a></li>
+                                <li><a href="helper-style.html">Helper Style</a></li>
+                                <li><a href="apps-component.html">Apps Component</a></li>
+                                <li><a href="http://stilearning.com/doc/stilearn-metro/ui-lab.html">UI Lab</a></li>
+                            </ul>
+                        </div><!--/.nav-collapse -->
+                    </div>
+                </div>
+            </div><!--/.navbar -->
+        </header>
+        
+        
+        <article class="container help-fixed">
+            <div class="row">
+                <div class="span2 doc-sidebar">
+                    <!--sidebar -->
+                    <ul class="nav nav-list" data-spy="affix" data-offset-top="70">
+                        <li><a href="#overview" class="scroll">Overview</a></li>
+                        <li><a href="#integration" class="scroll">Integration</a></li>
+                        <li><a href="#html-template" class="scroll">HTML Template</a></li>
+                        <li><a href="#next" class="scroll">What Next</a></li>
+                    </ul><!--/.sidebar -->
+                </div><!--/.span3 -->
+
+                <div class="span10">
+                    <div class="doc-content-box">
+                        <div class="page-header">
+                            <h1 id="overview">Overview</h1>
+                        </div>
+                        <h3 class="text-light">Required HTML5 doctype</h3>
+                        <p>Stilearn makes use of certain HTML elements and CSS properties that require the use of the HTML5 doctype. Include it at the beginning of all your projects.</p>
+                        <!-- code sample -->
+<pre class="prettyprint linenums">
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  ...
+&lt;/html&gt;
+</pre><!-- /code sample -->
+                        
+                        
+                        <div class="page-header">
+                            <h1 id="integration">Integration</h1>
+                        </div>
+                        <p>To use Stilearn Metro, you have to include at least some of the following files:</p>
+                        <h3 class="text-light">CSS Required</h3>
+                        <!-- code sample -->
+<pre class="prettyprint linenums">
+/* bootstrap css */
+&lt;link href=&quot;css/bootstrap.css&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;link href=&quot;css/bootstrap-responsive.css&quot; rel=&quot;stylesheet&quot;&gt;
+
+/* stilearn metro css */
+&lt;link href=&quot;css/metro-bootstrap.css&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;link href=&quot;css/metro.css&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;link href=&quot;css/metro-responsive.css&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;link href=&quot;css/metro-helper.css&quot; rel=&quot;stylesheet&quot;&gt;
+
+/* add other css file here... */
+&lt;link href=&quot;css/font-awesome.css&quot; rel=&quot;stylesheet&quot;&gt;
+</pre><!-- /code sample -->
+                        
+                        
+                        
+                        <h3 class="text-light">Javascript Required</h3>
+                        <!-- code sample -->
+<pre class="prettyprint linenums">
+
+&lt;!-- required js --&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://platform.twitter.com/widgets.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery-ui.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/bootstrap.js&quot;&gt;&lt;/script&gt;
+&lt;!-- optional --&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery.ui.touch-punch.min.js&quot;&gt;&lt;/script&gt;
+
+&lt;!-- required --&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/stilearn-base.js&quot;&gt;&lt;/script&gt;
+
+&lt;!-- include other js here...  --&gt;
+</pre><!-- /code sample -->
+                        
+                        
+                        
+                        <div class="page-header">
+                            <h1 id="html-template">HTML Template</h1>
+                        </div>
+                        <p>Basic HTML template would look as follows:</p>
+                        <!-- code sample -->
+<pre class="prettyprint linenums">
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;title&gt;Stilearn Metro Admin Bootstrap&lt;/title&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;meta name=&quot;description&quot; content=&quot;&quot;&gt;
+    &lt;meta name=&quot;author&quot; content=&quot;stilearning&quot;&gt;
+    
+
+    /* bootstrap css */
+    &lt;link href=&quot;css/bootstrap.css&quot; rel=&quot;stylesheet&quot;&gt;
+    &lt;link href=&quot;css/bootstrap-responsive.css&quot; rel=&quot;stylesheet&quot;&gt;
+
+    /* stilearn metro css */
+    &lt;link href=&quot;css/metro-bootstrap.css&quot; rel=&quot;stylesheet&quot;&gt;
+    &lt;link href=&quot;css/metro.css&quot; rel=&quot;stylesheet&quot;&gt;
+    &lt;link href=&quot;css/metro-responsive.css&quot; rel=&quot;stylesheet&quot;&gt;
+    &lt;link href=&quot;css/metro-helper.css&quot; rel=&quot;stylesheet&quot;&gt;
+
+    /* add other css file here... */
+    &lt;link href=&quot;css/font-awesome.css&quot; rel=&quot;stylesheet&quot;&gt;
+
+  &lt;/head&gt;
+
+  &lt;body&gt;
+    &lt;!-- application template would be place here --&gt;
+    ...
+    
+    &lt;!-- required js --&gt;
+    &lt;script type=&quot;text/javascript&quot; src=&quot;http://platform.twitter.com/widgets.js&quot;&gt;&lt;/script&gt;
+    &lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery.js&quot;&gt;&lt;/script&gt;
+    &lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery-ui.js&quot;&gt;&lt;/script&gt;
+    &lt;script type=&quot;text/javascript&quot; src=&quot;js/bootstrap.js&quot;&gt;&lt;/script&gt;
+    &lt;!-- optional --&gt;
+    &lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery.ui.touch-punch.min.js&quot;&gt;&lt;/script&gt;
+
+    &lt;!-- required --&gt;
+    &lt;script type=&quot;text/javascript&quot; src=&quot;js/stilearn-base.js&quot;&gt;&lt;/script&gt;
+
+    &lt;!-- include other js here...  --&gt;
+  &lt;/body&gt;
+
+&lt;/html&gt;
+
+</pre><!-- /code sample -->
+
+
+                        
+                        <div class="page-header">
+                            <h1 id="next">What Next?</h1>
+                        </div>
+                        <p>Recommended continue reading stilearn metro documentation then you can jump to read the Bootstrap documentation.</p>
+                        <p>
+                            <a class="btn bg-cyan" href="layout.html">Continue read the docs</a>
+                            <a class="btn bg-amber" href="http://twitter.github.io/bootstrap" target="_blank">Visit the Bootstrap docs</a>
+                        </p>
+                        
+                        
+                    </div><!--/.doc-content-box -->
+                </div><!--/.span9 -->
+                
+            </div><!--/.row-fluid -->
+            
+        </article><!-- /container -->
+        
+
+        <!-- footer -->
+        <footer>
+            <div class="footer">
+                <div class="container">
+                    <p>Copyright &copy; <a href="http://stilearning.com">Stilearning</a> 2013, All rights reserved. Created with <a target="_blank" href="https://wrapbootstrap.com/theme/stilearn-metro-admin-template-WB0605G10">Stilearn Metro</a>.</p>
+                </div>
+            </div>
+        </footer><!--/.footer -->
+
+        
+        <!-- javascript
+        ================================================== -->
+        <script type="text/javascript" src="../js/jquery.min.js"></script>
+        <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+        
+        <script type="text/javascript" src="../js/google-code-prettify/prettify.js"></script>
+        <script type="text/javascript" src="assets/js/doc.js"></script>
+        <script type="text/javascript">
+            $(function(){
+                'use strict'
+                
+                // make code pretty demo
+                window.prettyPrint && prettyPrint();
+                
+            })
+        </script>
+    </body>
+</html>

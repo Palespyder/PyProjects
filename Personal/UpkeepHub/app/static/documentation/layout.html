@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Layout - Stilearn Metro Documentation</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <!-- styles -->
+        <link href="../css/bootstrap.css" rel="stylesheet">
+        <link href="../css/bootstrap-responsive.css" rel="stylesheet">
+        <link href="../css/metro-bootstrap.css" rel="stylesheet">
+        <link href="../css/metro.css" rel="stylesheet">
+        <link href="../css/metro-responsive.css" rel="stylesheet">
+        <link href="../css/metro-helper.css" rel="stylesheet">
+        <link href="../css/icomoon.css" rel="stylesheet">
+        
+        <link href="../css/google-code-prettify/prettify.css" rel="stylesheet">
+        <link href="assets/css/doc.css" rel="stylesheet">
+
+        <!-- favicon -->
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="../ico/apple-touch-icon-57-precomposed.png">
+        <link rel="shortcut icon" href="../ico/favicon.png">
+
+
+        <!--[if lt IE 9]>
+          <script src="../js/html5shiv.js"></script>
+        <![endif]-->
+        
+    </head>
+
+    <body data-spy="scroll" data-target=".doc-sidebar">
+        <header>
+            <!--navbar -->
+            <div class="navbar navbar-fixed-top navbar-cyan">
+                <div class="navbar-inner">
+                    <div class="container">
+                        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </a>
+                        <a class="brand" href="getting-started.html">Documentation</a>
+                        <div class="nav-collapse collapse">
+                            <ul class="nav">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="getting-started.html">Get Started</a></li>
+                                <li class="active"><a href="layout.html">Layout</a></li>
+                                <li><a href="helper-style.html">Helper Style</a></li>
+                                <li><a href="apps-component.html">Apps Component</a></li>
+                                <li><a href="http://stilearning.com/doc/stilearn-metro/ui-lab.html">UI Lab</a></li>
+                            </ul>
+                        </div><!--/.nav-collapse -->
+                    </div>
+                </div>
+            </div><!--/.navbar -->
+        </header>
+        
+        
+        <article class="container help-fixed">
+            <div class="row">
+                <div class="span2 doc-sidebar">
+                    <!--sidebar -->
+                    <ul class="nav nav-list" data-spy="affix" data-offset-top="70">
+                        <li><a href="#header" class="scroll">Header</a></li>
+                        <li><a href="#section-content" class="scroll">Section Content</a></li>
+                        <li><a href="#side-navs" class="scroll">Side Navs</a></li>
+                        <li><a href="#contents" class="scroll">Contents</a></li>
+                        <li><a href="#footer" class="scroll">Footer</a></li>
+                    </ul><!--/.sidebar -->
+                </div><!--/.span3 -->
+
+                <div class="span10">
+                    <div class="doc-content-box">
+                        <div class="page-header">
+                            <h1 id="header">Header</h1>
+                        </div>
+                        <p>Stilearn Metro using bootstrap navbar as part of the header:</p>
+                        <!-- code sample -->
+<pre class="prettyprint linenums">
+&lt;!-- start header--&gt;
+&lt;header class=&quot;header&quot;&gt;
+    &lt;!-- start navbar, this navbar on top --&gt;
+    &lt;div class=&quot;navbar navbar-inverse&quot;&gt;
+        &lt;!-- navbar inner--&gt;
+        &lt;div class=&quot;navbar-inner&quot;&gt;
+            &lt;!-- container--&gt;
+            &lt;div class=&quot;container&quot;&gt;
+                
+                &lt;!-- this btn-navbar contains the menu on the side-left, will be seen on portrait tablet and less. --&gt;
+                &lt;a class=&quot;btn btn-navbar help-inline&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#side-left&quot;&gt;
+                    &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                    &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                    &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                &lt;/a&gt;
+                
+                &lt;!-- Your brand here, images or text --&gt;
+                &lt;a class=&quot;brand&quot; href=&quot;index.html&quot;&gt;
+                    &lt;!-- just a sample brand &amp; logo --&gt;
+                    &lt;i class=&quot;aweso-th-large&quot;/&gt; &lt;!-- or use this &lt;img src=&quot;path/to/your/brand&quot; alt=&quot;&quot; /&gt; --&gt;
+                    Stilearn
+                &lt;/a&gt;
+                
+                &lt;!-- Un-collapse nav --&gt;
+                &lt;div class=&quot;nav-uncollapse&quot;&gt;
+                    &lt;!-- pull left menu and hidden on phone device--&gt;
+                    &lt;ul class=&quot;nav pull-left hidden-phone&quot;&gt;
+                        
+                    &lt;/ul&gt;&lt;!--/pull left menu--&gt;
+
+                    &lt;!-- pull right menu--&gt;
+                    &lt;ul class=&quot;nav pull-right&quot;&gt;
+                        
+                    &lt;/ul&gt;&lt;!--/pull right menu--&gt;
+                &lt;/div&gt;&lt;!-- /uncollapse nav --&gt;
+                
+                &lt;!-- Everything you want hidden at 940px or less, leave it blank! (this use when side-left collapse) --&gt;
+                &lt;div id=&quot;side-left&quot; class=&quot;nav-collapse collapse hidden-desktop&quot;&gt;&lt;/div&gt;
+                
+            &lt;/div&gt;&lt;!--/container--&gt;
+        &lt;/div&gt;&lt;!--/navbar-inner--&gt;
+        
+    &lt;/div&gt;&lt;!--/ navbar--&gt;
+&lt;/header&gt;
+&lt;!--/ end header--&gt;
+</pre><!-- /code sample -->
+                        
+                        
+                        <div class="page-header">
+                            <h1 id="section-content">Section Content</h1>
+                        </div>
+                        <p>section-content is a container to your application, here you can put side navs and content of the application that you created:</p>
+                        <!-- code sample -->
+<pre class="prettyprint linenums">
+&lt;!-- start section content--&gt;
+&lt;section class=&quot;section-content&quot;&gt;
+    &lt;!-- side left, its part to menu on left--&gt;
+    &lt;div class=&quot;side-left&quot;&gt;
+        &lt;!-- navs content --&gt;
+    &lt;/div&gt;&lt;!--/ side left--&gt;
+
+
+    &lt;!-- start content --&gt;
+    &lt;div class=&quot;content&quot;&gt;
+        &lt;!-- your awesome apps content --&gt;
+    &lt;/div&gt;&lt;!--/ end content --&gt;
+
+&lt;/section&gt;
+&lt;!-- /end section content--&gt;
+</pre><!-- /code sample -->
+                        
+                        <div class="page-header">
+                            <h1 id="side-navs">Side Navs</h1>
+                        </div>
+                        <p>Side Navs is placed on the section class <code>.sections-content</code>, basic template:</p>
+                        <!-- code sample -->
+<pre class="prettyprint linenums">
+&lt;!-- side left, its part to menu on left--&gt;
+&lt;div class=&quot;side-left&quot;&gt;
+    &lt;!--nav, this structure create with nav (find the bootstrap doc about .nav list) --&gt;
+    &lt;ul class=&quot;nav nav-list&quot;&gt;
+        &lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;Dashboard&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;&lt;!--/ nav --&gt;
+&lt;/div&gt;&lt;!--/ side left--&gt;
+</pre><!-- /code sample -->
+                        
+                        
+                        <p>Side navs provides 3 options for child menus (dropdown-list, dropdown and dropup). You can use any or all of them.</p>
+<pre class="prettyprint linenums">
+&lt;!-- side left, its part to menu on left--&gt;
+&lt;div id=&quot;navside&quot; class=&quot;side-left&quot; data-collapse=&quot;navbar&quot;&gt;
+    &lt;form class=&quot;form-inline search-module&quot; action=&quot;?&quot; method=&quot;post&quot;&gt;
+        &lt;div class=&quot;input-append input-append-inline&quot;&gt;
+            &lt;input name=&quot;search&quot; class=&quot;input-block-level&quot; type=&quot;text&quot; placeholder=&quot;Type to search&quot; /&gt;
+            &lt;button class=&quot;btn bg-cyan&quot; type=&quot;button&quot;&gt;
+                &lt;i class=&quot;aweso-search&quot;&gt;&lt;/i&gt;
+            &lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/form&gt;
+    
+    &lt;!--nav, this structure create with nav (find the bootstrap doc about .nav list) --&gt;
+    &lt;ul class=&quot;nav nav-list&quot;&gt;
+        &lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;Dashboard&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;dropdown-list&quot;&gt; &lt;!-- example use with drop list --&gt;
+            &lt;a href=&quot;#&quot; class=&quot;dropdown-toggle&quot; data-toggle=&quot;dropdown-list&quot;&gt;
+                Menus #1 &lt;i class=&quot;aweso-angle-down&quot;&gt;&lt;/i&gt;
+            &lt;/a&gt;
+            &lt;ul class=&quot;dropdown-menu&quot;&gt;
+                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Child menus #1&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Child menus #2&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Child menus #3&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;dropdown&quot;&gt; &lt;!-- example use with dropdown --&gt;
+            &lt;a href=&quot;#&quot; class=&quot;dropdown-toggle&quot; data-toggle=&quot;dropdown&quot;&gt;
+                Menus #2 &lt;i class=&quot;aweso-angle-down&quot;&gt;&lt;/i&gt;
+            &lt;/a&gt;
+            &lt;ul class=&quot;dropdown-menu&quot;&gt;
+                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Child menus #1&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Child menus #2&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Child menus #3&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;dropup&quot;&gt; &lt;!-- example use with dropup --&gt;
+            &lt;a href=&quot;#&quot; class=&quot;dropdown-toggle&quot; data-toggle=&quot;dropdown&quot;&gt;
+                Menus #3 &lt;i class=&quot;aweso-angle-down&quot;&gt;&lt;/i&gt;
+            &lt;/a&gt;
+            &lt;ul class=&quot;dropdown-menu&quot;&gt;
+                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Child menus #1&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Child menus #2&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Child menus #3&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;&lt;!--/ nav --&gt;
+&lt;/div&gt;&lt;!--/ side left--&gt;
+</pre><!-- /code sample -->
+                        
+
+
+                        <div class="page-header">
+                            <h1 id="contents">Contents</h1>
+                        </div>
+                        <p>Basic HTML template would look as follows:</p>
+                        <!-- code sample -->
+<pre class="prettyprint linenums">
+&lt;!-- start content --&gt;
+&lt;div class=&quot;content&quot;&gt;
+    &lt;!-- content header --&gt;
+    &lt;header class=&quot;content-header&quot;&gt;
+        &lt;!-- content action (optional)--&gt;
+        &lt;ul class=&quot;content-action pull-right&quot;&gt;&lt;/ul&gt;
+        
+        &lt;!-- content title--&gt;
+        &lt;div class=&quot;page-header&quot;&gt;&lt;h1&gt;Dashboard&lt;/h1&gt;&lt;/div&gt;
+
+        &lt;!-- content breadcrumb --&gt;
+        &lt;ul class=&quot;breadcrumb breadcrumb-inline&quot;&gt;
+            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt; &lt;span class=&quot;divider&quot;&gt;&lt;i class=&quot;aweso-angle-right&quot;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+            &lt;li class=&quot;active&quot;&gt;path&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/header&gt; &lt;!--/ content header --&gt;
+
+    &lt;!-- content page --&gt;
+    &lt;article class=&quot;content-page&quot;&gt;
+        &lt;!-- main page --&gt;
+        &lt;div class=&quot;main-page&quot;&gt;
+            &lt;div class=&quot;content-inner&quot;&gt;
+                &lt;!-- write your awesome apps here --&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/article&gt; &lt;!-- /content page --&gt;
+
+    &lt;!-- Just a simple footer place here. --&gt;
+    &lt;footer class=&quot;content-footer&quot;&gt;
+        &lt;p&gt;Copyright &amp;copy; 2013. All Right Reserved.&lt;/p&gt;
+    &lt;/footer&gt;&lt;!--/ footer --&gt;
+
+&lt;/div&gt;&lt;!--/ end content --&gt;
+</pre><!-- /code sample -->
+
+
+                        
+                        <div class="page-header">
+                            <h1 id="footer">Footer</h1>
+                        </div>
+                        <p>We just design a simple footer, it became part of the class <code>.content</code>.</p>
+                        <!-- code sample -->
+<pre class="prettyprint linenums">
+&lt;footer class=&quot;content-footer&quot;&gt;
+    &lt;p&gt;Copyright &amp;copy; 2013. All Right Reserved.&lt;/p&gt;
+&lt;/footer&gt;&lt;!--/ footer --&gt;
+</pre><!-- /code sample -->
+                        
+                        
+                    </div><!--/.doc-content-box -->
+                </div><!--/.span9 -->
+                
+            </div><!--/.row-fluid -->
+            
+        </article><!-- /container -->
+        
+
+        <!-- footer -->
+        <footer>
+            <div class="footer">
+                <div class="container">
+                    <p>Copyright &copy; <a href="http://stilearning.com">Stilearning</a> 2013, All rights reserved. Created with <a target="_blank" href="https://wrapbootstrap.com/theme/stilearn-metro-admin-template-WB0605G10">Stilearn Metro</a>.</p>
+                </div>
+            </div>
+        </footer><!--/.footer -->
+
+        
+        <!-- javascript
+        ================================================== -->
+        <script type="text/javascript" src="../js/jquery.min.js"></script>
+        <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+        
+        <script type="text/javascript" src="../js/google-code-prettify/prettify.js"></script>
+        <script type="text/javascript" src="assets/js/doc.js"></script>
+        <script type="text/javascript">
+            $(function(){
+                'use strict'
+                
+                // make code pretty demo
+                window.prettyPrint && prettyPrint();
+                
+            })
+        </script>
+    </body>
+</html>
