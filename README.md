@@ -12,7 +12,7 @@ The PyProjects repository serves as a central hub for my journey in learning and
 
 ## Repository Structure
 
-- **/educational/**: Contains projects related to learning Python, such as tutorials and code exercises.
+- **/Educational/**: Contains projects related to learning Python, such as tutorials, site clones, and code exercises.
 - **/Practice Problems/**: Houses practice projects, coding challenges, and solutions.
 - **/personal/**: Includes personal projects, tools, and experiments.
 
