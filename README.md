@@ -24,9 +24,6 @@ Feel free to explore the projects and use the code as you see fit. If you have s
 
 This repository is for educational purposes and personal use. The code within is provided as-is, and I encourage you to use and modify it responsibly. For any specific licensing or usage questions, please contact me directly.
 
-## Contact
-
-For any inquiries or feedback, please contact me at [jason.lewis@gmail.com](mailto:jason.lewis@gmail.com).
 
 Happy coding!
 
