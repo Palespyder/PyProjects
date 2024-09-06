@@ -342,4 +342,19 @@ def SumOfList(listOne):
 
 # 33. Input a list of numbers and sort them without using the sort() method.
 def SortList(listOne):
+     # Outer loop to iterate through the list n times
+    for n in range(len(listOne) - 1, 0, -1):
+
+        # Inner loop to compare adjacent elements
+        for i in range(n):
+            if listOne[i] > listOne[i + 1]:
+
+                # Swap elements if they are in the wrong order
+                swapped = True
+                listOne[i], listOne[i + 1] = alistOner[i + 1], listOne[i]
+
+
+# 33. 
+
+
     
