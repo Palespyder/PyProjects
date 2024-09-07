@@ -1,5 +1,6 @@
 import tkinter as tk
 
+
 root = tk.Tk()
 
 
@@ -64,7 +65,15 @@ def OnEquals():
         operator == '/'
         textbox.insert('end', "ERROR")
 
-    
+def appear(x):
+    return lambda: textbox.insert(tk.END, x)
+
+
+numbers = ["7", "4", "1", "8", "5", "2", "9", "6", "3"]
+
+for index in range(9):
+    n = numbers[index]
+    Button(buttons)
 
 
 # Column 1
