@@ -87,6 +87,7 @@ A user-friendly application for converting temperatures between Celsius, Fahrenh
 - `ttkbootstrap` library for the UI
 - `PIL` (Pillow) library for image handling
 
+---
 
 ## QR Code Generator
 **Description:**  
