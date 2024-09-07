@@ -53,4 +53,3 @@ This Python script renames image files in a selected folder and its subfolders. 
 - Pillow for image processing capabilities.
 - Tkinter for the graphical user interface.
 
-For any issues or contributions, please open an issue or submit a pull request on the [GitHub repository](https://github.com/yourusername/yourrepository).
