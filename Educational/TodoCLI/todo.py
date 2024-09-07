@@ -1,113 +1,60 @@
-import typer
 import sqlite3
+import typer
 from datetime import datetime
 
+# Initialize Typer CLI app
 app = typer.Typer()
 
+# Connect to the SQLite database (creates the file if it doesn't exist)
+conn = sqlite3.connect('todo.db')
+c = conn.cursor()
 
-"""@app.command()
-def hello(name: str):
-    print(f"Hello {name}")
+# Create the todo_items table if it doesn't already exist
+c.execute('''CREATE TABLE IF NOT EXISTS todo_items (
+                 id INTEGER PRIMARY KEY AUTOINCREMENT,
+                 date_added TEXT,
+                 task TEXT,
+                 status TEXT
+             )''')
+conn.commit()
 
-
+# Function to add a new task
 @app.command()
-def goodbye(name: str, formal: bool = False):
-    if formal:
-        print(f"Goodbye Ms. {name}. Have a good day.")
-    else:
-        print(f"Bye {name}!")"""
-
-@app.command()
-def init():
-    # Connect to SQLite database (it will create the database if it doesn't exist)
-    conn = sqlite3.connect(f'todo.db')
-
-    # Create a cursor object to execute SQL commands
-    cursor = conn.cursor()
-
-    # SQL query to create a new table if it doesn't exist
-    create_table_query = '''
-    CREATE TABLE IF NOT EXISTS todo_items (
-        date TEXT,
-        item TEXT,
-        status TEXT
-    )
-    '''
-
-    # Execute the query to create the table
-    cursor.execute(create_table_query)
-
-    # Commit the changes
+def add(task: str):
+    """Add a new task."""
+    date_added = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    c.execute("INSERT INTO todo_items (date_added, task, status) VALUES (?, ?, ?)", (date_added, task, 'open'))
     conn.commit()
+    typer.echo(f"Task '{task}' added!")
 
-    # Close the connection
-    conn.close()
-
-    print("Database and table initialized successfully.")
-
-
+# Function to list all tasks
 @app.command()
-def insert(item: str):
-    # Connect to the SQLite database
-    conn = sqlite3.connect('todo.db')
-    cursor = conn.cursor()
-
-    # Get the current date and time
-    current_datetime = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-
-    # Define the item to insert
-    todo_item = item
-    status = "open"
-
-    # SQL query to insert a new row into the todo_items table
-    insert_query = '''
-    INSERT INTO todo_items (date, item, status)
-    VALUES (?, ?, ?)
-    '''
-
-    # Execute the query with the values (current date, item, and status)
-    cursor.execute(insert_query, (current_datetime, todo_item, status))
-
-    # Commit the transaction
-    conn.commit()
-
-    # Close the connection
-    conn.close()
-
-    print("New to-do item inserted successfully.")
-
-
-@app.command()
-def list_open_todos():
-    # Connect to the SQLite database
-    conn = sqlite3.connect('todo.db')
-    cursor = conn.cursor()
-
-    # SQL query to select all open to-do items
-    select_query = '''
-    SELECT date, item, status FROM todo_items WHERE status = 'open'
-    '''
-
-    # Execute the query and fetch all results
-    cursor.execute(select_query)
-    open_todos = cursor.fetchall()
-
-    # Close the connection
-    conn.close()
-
-    # Check if there are any open to-do items
-    if open_todos:
-        typer.echo("Open To-Do Items:")
-        for todo in open_todos:
-            date, item, status = todo
-            typer.echo(f"Date: {date}, Item: {item}, Status: {status}")
+def list():
+    """List all tasks."""
+    c.execute("SELECT id, task, status FROM todo_items")
+    tasks = c.fetchall()
+    
+    if tasks:
+        for task in tasks:
+            typer.echo(f"{task[0]}. {task[1]} [{task[2]}]")
     else:
-        typer.echo("No open to-do items found.")
+        typer.echo("No tasks found.")
 
+# Function to mark a task as complete
+@app.command()
+def complete(task_id: int):
+    """Mark a task as complete."""
+    c.execute("UPDATE todo_items SET status = 'complete' WHERE id = ?", (task_id,))
+    conn.commit()
+    typer.echo(f"Task {task_id} marked as complete!")
 
-
-
-
+# Function to delete a task
+@app.command()
+def delete(task_id: int):
+    """Delete a task."""
+    c.execute("DELETE FROM todo_items WHERE id = ?", (task_id,))
+    conn.commit()
+    typer.echo(f"Task {task_id} deleted!")
 
 if __name__ == "__main__":
     app()
