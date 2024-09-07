@@ -48,14 +48,6 @@ This Python script renames image files in a selected folder and its subfolders. 
   - Initializes a Tkinter window (hidden) to select a folder.
   - Iterates through the selected folder and its subfolders, renaming image files.
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
-## Author
-
-Created by [Your Name].
-
 ## Acknowledgements
 
 - Pillow for image processing capabilities.
