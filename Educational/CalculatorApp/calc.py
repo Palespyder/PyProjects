@@ -1,144 +1,55 @@
-import tkinter as tk
+from tkinter import *
+import ttkbootstrap as tb
+from ttkbootstrap.constants import *
 
+# Create the main window
+root = tb.Window(themename="superhero")
+root.title("Calculator")
+root.geometry("300x400")
+root.resizable(False, False)
 
-root = tk.Tk()
+# Global variable for storing the equation
+equation = StringVar()
 
+# Function to update the equation in the text entry
+def press(num):
+    current_equation = equation.get()
+    equation.set(current_equation + str(num))
 
-root.geometry('300x350')
-root.title("PyCalc")
+# Function to evaluate the final expression
+def equalpress():
+    try:
+        result = str(eval(equation.get()))  # Evaluate the equation
+        equation.set(result)
+    except Exception as e:
+        equation.set("Error")
 
-textbox = tk.Text(root, height=3, font=('Arial', 18))
-textbox.tag_configure("right", justify='right')
-textbox.tag_add("right", 1.0, "end")
-textbox.pack(padx=10, pady=10)
+# Function to clear the input
+def clear():
+    equation.set("")
 
+# Create the display entry box
+entry_box = tb.Entry(root, textvariable=equation, font=("Helvetica", 18), justify="right", bootstyle="info")
+entry_box.grid(row=0, column=0, columnspan=4, ipadx=10, ipady=10, padx=10, pady=10)
 
-buttonframe = tk.Frame(root)
-buttonframe.columnconfigure(0, weight=1)
-buttonframe.columnconfigure(1, weight=1)
-buttonframe.columnconfigure(2, weight=1)
-buttonframe.columnconfigure(3, weight=1)
+# Create number buttons
+buttons = [
+    ('7', 1, 0), ('8', 1, 1), ('9', 1, 2), ('/', 1, 3),
+    ('4', 2, 0), ('5', 2, 1), ('6', 2, 2), ('*', 2, 3),
+    ('1', 3, 0), ('2', 3, 1), ('3', 3, 2), ('-', 3, 3),
+    ('0', 4, 0), ('.', 4, 1), ('=', 4, 2), ('+', 4, 3),
+]
 
-global curr_num
-curr_num = []
-global saved_num
-saved_num = []
-global operator
-operator = ""
-
-def ClearEverything():
-    textbox.delete('1.0', tk.END)    
-    textbox.insert('end', "0")
-
-def AddNum(num):
-    curr_num.append(num)
-    result = int(''.join(map(str, curr_num)))
-    textbox.delete('1.0', tk.END)    
-    textbox.insert('end', result)
-
-def SetOperator(newoperator):
-    operator = newoperator
-    saved_num = curr_num
-    curr_num = []
-    textbox.delete('1.0', tk.END)
-
-def OnEquals():
-    if saved_num:
-        saved = float(''.join(saved_num))
+for (text, row, col) in buttons:
+    if text == '=':
+        button = tb.Button(root, text=text, width=5, bootstyle="success", command=equalpress)
     else:
-        saved = 0.0
-    if curr_num:
-        current = float(''.join(curr_num))
-    else:
-        current = 0.0
+        button = tb.Button(root, text=text, width=5, bootstyle="secondary", command=lambda t=text: press(t))
+    button.grid(row=row, column=col, padx=5, pady=5)
 
-    textbox.delete('1.0', tk.END)
-    if operator == '/':
-        textbox.insert('end', saved / current)
-    elif operator == '*':
-        textbox.insert('end', saved * current)
-    elif operator == '-':
-        textbox.insert('end', saved - current)
-    elif operator == '+':
-        textbox.insert('end', saved + current)
-    else:
-        operator == '/'
-        textbox.insert('end', "ERROR")
+# Create clear button
+clear_button = tb.Button(root, text="Clear", width=5, bootstyle="danger", command=clear)
+clear_button.grid(row=5, column=0, columnspan=4, padx=5, pady=10, sticky="nsew")
 
-def appear(x):
-    return lambda: textbox.insert(tk.END, x)
-
-
-numbers = ["7", "4", "1", "8", "5", "2", "9", "6", "3"]
-
-for index in range(9):
-    n = numbers[index]
-    Button(buttons)
-
-
-# Column 1
-col1btn1 = tk.Button(buttonframe, text='CE', command=ClearEverything, font=('Arial', 18), width=3)
-col1btn1.grid(row=0, column=0)
-
-col1btn2 = tk.Button(buttonframe, text='7', command=lambda: AddNum(7), font=('Arial', 18), width=3)
-col1btn2.grid(row=1, column=0)
-
-col1btn3 = tk.Button(buttonframe, text='4', command=lambda: AddNum(4), font=('Arial', 18), width=3)
-col1btn3.grid(row=2, column=0)
-
-col1btn4 = tk.Button(buttonframe, text='1', command=lambda: AddNum(1), font=('Arial', 18), width=3)
-col1btn4.grid(row=3, column=0)
-
-
-# Column 2
-col2btn1 = tk.Button(buttonframe, text='C', font=('Arial', 18), width=3)
-col2btn1.grid(row=0, column=1)
-
-col2btn2 = tk.Button(buttonframe, text='8', command=lambda: AddNum(8), font=('Arial', 18), width=3)
-col2btn2.grid(row=1, column=1)
-
-col2btn3 = tk.Button(buttonframe, text='5', command=lambda: AddNum(5), font=('Arial', 18), width=3)
-col2btn3.grid(row=2, column=1)
-
-col2btn4 = tk.Button(buttonframe, text='2', command=lambda: AddNum(2), font=('Arial', 18), width=3)
-col2btn4.grid(row=3, column=1)
-
-col2btn5 = tk.Button(buttonframe, text='0', command=lambda: AddNum(0), font=('Arial', 18), width=3)
-col2btn5.grid(row=4, column=1)
-
-# Column 3
-col3btn1 = tk.Button(buttonframe, text='←', font=('Arial', 18), width=3)
-col3btn1.grid(row=0, column=2)
-
-col3btn2 = tk.Button(buttonframe, text='9', command=lambda: AddNum(9), font=('Arial', 18), width=3)
-col3btn2.grid(row=1, column=2)
-
-col3btn3 = tk.Button(buttonframe, text='6', command=lambda: AddNum(6), font=('Arial', 18), width=3)
-col3btn3.grid(row=2, column=2)
-
-col3btn4 = tk.Button(buttonframe, text='3', command=lambda: AddNum(3), font=('Arial', 18), width=3)
-col3btn4.grid(row=3, column=2)
-
-col3btn5 = tk.Button(buttonframe, text='.', font=('Arial', 18), width=3)
-col3btn5.grid(row=4, column=2)
-
-# Column 4
-col4btn1 = tk.Button(buttonframe, text='÷', command=lambda: SetOperator('/'), font=('Arial', 18), width=3)
-col4btn1.grid(row=0, column=3)
-
-col4btn2 = tk.Button(buttonframe, text='×', command=lambda: SetOperator('*'), font=('Arial', 18), width=3)
-col4btn2.grid(row=1, column=3)
-
-col4btn3 = tk.Button(buttonframe, text='-', command=lambda: SetOperator('-'), font=('Arial', 18), width=3)
-col4btn3.grid(row=2, column=3)
-
-col4btn4 = tk.Button(buttonframe, text='+', command=lambda: SetOperator('+'), font=('Arial', 18), width=3)
-col4btn4.grid(row=3, column=3)
-
-col4btn5 = tk.Button(buttonframe, text='=', command=lambda: OnEquals(), font=('Arial', 18), width=3)
-col4btn5.grid(row=4, column=3)
-
-
-buttonframe.pack()
-
+# Start the application
 root.mainloop()
