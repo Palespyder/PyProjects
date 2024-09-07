@@ -103,7 +103,7 @@ A tool for generating QR codes from text or URLs. Users can create and download 
 
 ---
 
-## Video Downloader App for YouTube
+## [Video Downloader App for YouTube](https://github.com/Palespyder/PyProjects/tree/main/Educational/VideoDownloader)
 **Description:**  
 An application for downloading videos from YouTube. Users can input the URL of a YouTube video to download it to their local machine.
 
