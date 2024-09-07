@@ -1,6 +1,6 @@
 # Project Overview
 
-## Project 1: [Calculator App](https://github.com/Palespyder/PyProjects/tree/main/Educational/CalculatorApp)
+## [Calculator App](https://github.com/Palespyder/PyProjects/tree/main/Educational/CalculatorApp)
 **Description:**  
 A simple calculator application developed using Tkinter. The app allows users to perform basic arithmetic operations including addition, subtraction, multiplication, and division.
 
@@ -15,7 +15,7 @@ A simple calculator application developed using Tkinter. The app allows users to
 
 ---
 
-## Project 2: Todo App
+## [Todo App](https://github.com/Palespyder/PyProjects/tree/main/Educational/TodoCLI)
 **Description:**  
 A basic to-do list application that uses Python and SQLite for managing tasks. Users can add, list, complete, and delete tasks.
 
@@ -31,7 +31,7 @@ A basic to-do list application that uses Python and SQLite for managing tasks. U
 
 ---
 
-## Project 3: File Compression and Encoding
+## [File Compression and Encoding](https://github.com/Palespyder/PyProjects/tree/main/Educational/FileCompression)
 **Description:**  
 A utility project for encoding and compressing files. This project provides functionality for reducing file sizes and encoding data to ensure secure storage or transfer.
 
@@ -44,7 +44,7 @@ A utility project for encoding and compressing files. This project provides func
 
 ---
 
-## Project 4: Text to Speech Converter App
+## [Text to Speech Converter App](https://github.com/Palespyder/PyProjects/tree/main/Educational/PDFtoText)
 **Description:**  
 An application for converting text to speech. Users can input text and have it converted to spoken audio.
 
@@ -59,7 +59,7 @@ An application for converting text to speech. Users can input text and have it c
 
 ---
 
-## Project 5: Password Hashing and Validation
+## [Password Hashing and Validation](https://github.com/Palespyder/PyProjects/tree/main/Educational/PasswordHashingAndValidation)
 **Description:**  
 A project focused on secure password handling, including hashing and validation. Ensures that passwords are stored securely and validated correctly during authentication.
 
@@ -72,7 +72,23 @@ A project focused on secure password handling, including hashing and validation.
 
 ---
 
-## Project 6: QR Code Generator
+## [Temperature Conversion App](https://github.com/Palespyder/PyProjects/tree/main/Educational/TempConversionApp)
+**Description:**  
+A user-friendly application for converting temperatures between Celsius, Fahrenheit, and Kelvin. Users can input a temperature, select the unit of measurement, and see the converted values in all three units.
+
+**Features:**
+- Convert temperatures between Celsius, Fahrenheit, and Kelvin
+- Input temperature and select units using a user-friendly interface
+- Display converted temperatures with corresponding icons
+- Clear previous results before showing new conversions
+
+**Technologies:**
+- Python
+- `ttkbootstrap` library for the UI
+- `PIL` (Pillow) library for image handling
+
+
+## QR Code Generator
 **Description:**  
 A tool for generating QR codes from text or URLs. Users can create and download QR codes for various purposes.
 
@@ -86,7 +102,7 @@ A tool for generating QR codes from text or URLs. Users can create and download 
 
 ---
 
-## Project 7: Video Downloader App for YouTube
+## Video Downloader App for YouTube
 **Description:**  
 An application for downloading videos from YouTube. Users can input the URL of a YouTube video to download it to their local machine.
 
@@ -100,7 +116,7 @@ An application for downloading videos from YouTube. Users can input the URL of a
 
 ---
 
-## Project 8: Credit Card Validation using Luhn's Algorithm
+## Credit Card Validation using Luhn's Algorithm
 **Description:**  
 A project that validates credit card numbers using Luhn's algorithm. Ensures that credit card numbers are correctly formatted and potentially valid.
 
@@ -113,7 +129,7 @@ A project that validates credit card numbers using Luhn's algorithm. Ensures tha
 
 ---
 
-## Project 9: Generating PDF Files
+## Generating PDF Files
 **Description:**  
 A utility for generating PDF files from various inputs. Users can create PDFs for reports, documents, and other purposes.
 
@@ -127,7 +143,7 @@ A utility for generating PDF files from various inputs. Users can create PDFs fo
 
 ---
 
-## Project 10: PDF Invoice Generator
+## PDF Invoice Generator
 **Description:**  
 An application specifically for generating PDF invoices. Ideal for businesses or freelancers needing to create professional invoices.
 
@@ -141,7 +157,7 @@ An application specifically for generating PDF invoices. Ideal for businesses or
 
 ---
 
-## Project 11: Automated Resume Builder
+## Automated Resume Builder
 **Description:**  
 An application that automates the creation of resumes. Users can input their details and generate a formatted resume.
 
@@ -154,7 +170,7 @@ An application that automates the creation of resumes. Users can input their det
 
 ---
 
-## Project 12: Snake Game in Pygame
+## Snake Game in Pygame
 **Description:**  
 A classic Snake game developed using Pygame. Players control a snake to eat food and grow while avoiding collisions.
 
@@ -169,7 +185,7 @@ A classic Snake game developed using Pygame. Players control a snake to eat food
 
 ---
 
-## Project 13: Calculator with PyQT
+## Calculator with PyQT
 **Description:**  
 A calculator application developed using PyQt. Provides a graphical user interface for performing basic arithmetic operations.
 
@@ -183,7 +199,7 @@ A calculator application developed using PyQt. Provides a graphical user interfa
 
 ---
 
-## Project 14: Notepad App with PyQT6
+## Notepad App with PyQT6
 **Description:**  
 A text editor application built with PyQt6. Provides a simple interface for editing and saving text files.
 
@@ -197,7 +213,7 @@ A text editor application built with PyQt6. Provides a simple interface for edit
 
 ---
 
-## Project 15: Paint Application with PyQT6
+## Paint Application with PyQT6
 **Description:**  
 A paint application developed using PyQt6. Allows users to draw and create artwork with various tools.
 
@@ -211,7 +227,7 @@ A paint application developed using PyQt6. Allows users to draw and create artwo
 
 ---
 
-## Project 16: Product Inventory App using SQLite and Eel
+## Product Inventory App using SQLite and Eel
 **Description:**  
 An application for managing product inventory using SQLite for database management and Eel for the web-based user interface.
 
@@ -226,7 +242,7 @@ An application for managing product inventory using SQLite for database manageme
 
 ---
 
-## Project 17: Developer Survey Data Analysis and Visualization
+## Developer Survey Data Analysis and Visualization
 **Description:**  
 A project for analyzing and visualizing survey data from developers. Uses Pandas for data manipulation and Matplotlib for visualization.
 
@@ -241,7 +257,7 @@ A project for analyzing and visualizing survey data from developers. Uses Pandas
 
 ---
 
-## Project 18: Supermarket Data Analysis and Visualization
+## Supermarket Data Analysis and Visualization
 **Description:**  
 A project focused on analyzing and visualizing data from supermarket transactions. Utilizes Pandas for data manipulation and Seaborn for advanced visualizations.
 
@@ -256,7 +272,7 @@ A project focused on analyzing and visualizing data from supermarket transaction
 
 ---
 
-## Project 19: Todo App using Django
+## Todo App using Django
 **Description:**  
 A to-do list application developed using Django. Provides a web-based interface for managing tasks with full CRUD functionality.
 
@@ -270,7 +286,7 @@ A to-do list application developed using Django. Provides a web-based interface 
 
 ---
 
-## Project 20: Expense Manager with Flask and ChartJS
+## Expense Manager with Flask and ChartJS
 **Description:**  
 An expense management application built with Flask for the backend and ChartJS for visualizing expenses.
 
@@ -285,7 +301,7 @@ An expense management application built with Flask for the backend and ChartJS f
 
 ---
 
-## Project 21: Build a REST API with Django
+## Build a REST API with Django
 **Description:**  
 A project to build a RESTful API using Django. Provides endpoints for managing resources and interacting with the application programmatically.
 
@@ -300,7 +316,7 @@ A project to build a RESTful API using Django. Provides endpoints for managing r
 
 ---
 
-## Project 22: Web Scraping
+## Web Scraping
 **Description:**  
 A project for scraping data from websites. Utilizes Python libraries to extract information from web pages.
 
@@ -315,7 +331,7 @@ A project for scraping data from websites. Utilizes Python libraries to extract 
 
 ---
 
-## Project 23: Twitter Autoposter
+## Twitter Autoposter
 **Description:**  
 A tool for automatically posting tweets to Twitter. Uses the Twitter API for posting and scheduling tweets.
 
@@ -329,7 +345,7 @@ A tool for automatically posting tweets to Twitter. Uses the Twitter API for pos
 
 ---
 
-## Project 24: Chat App using Network and Sockets
+## Chat App using Network and Sockets
 **Description:**  
 A chat application that uses network sockets for communication. Allows users to send and receive messages in real-time.
 
@@ -340,5 +356,3 @@ A chat application that uses network sockets for communication. Allows users to 
 **Technologies:**
 - Python
 - Socket programming
-
----
