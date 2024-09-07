@@ -27,7 +27,7 @@ A basic to-do list application that uses Python and SQLite for managing tasks. U
 
 **Technologies:**
 - Python
-- SQLite
+- `SQLite`
 
 ---
 
@@ -55,7 +55,7 @@ An application for converting text to speech. Users can input text and have it c
 
 **Technologies:**
 - Python
-- gTTS (Google Text-to-Speech)
+- `gTTS (Google Text-to-Speech)`
 
 ---
 
