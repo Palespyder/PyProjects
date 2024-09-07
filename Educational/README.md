@@ -89,7 +89,7 @@ A user-friendly application for converting temperatures between Celsius, Fahrenh
 
 ---
 
-## QR Code Generator
+## [QR Code Generator](https://github.com/Palespyder/PyProjects/tree/main/Educational/QRCodeGenerator)
 **Description:**  
 A tool for generating QR codes from text or URLs. Users can create and download QR codes for various purposes.
 
