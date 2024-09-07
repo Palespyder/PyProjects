@@ -1,3 +1,4 @@
+# Import necessary modules from tkinter and ttkbootstrap
 from tkinter import *
 import ttkbootstrap as tb
 from ttkbootstrap.constants import *
@@ -13,11 +14,21 @@ equation = StringVar()
 
 # Function to update the equation in the text entry
 def press(num):
+    """
+    Updates the current equation by appending the pressed button's value.
+    
+    Parameters:
+    num (str): The value of the button pressed (number or operator).
+    """
     current_equation = equation.get()
     equation.set(current_equation + str(num))
 
 # Function to evaluate the final expression
 def equalpress():
+    """
+    Evaluates the current equation and updates the display with the result.
+    If there's an error during evaluation, display "Error".
+    """
     try:
         result = str(eval(equation.get()))  # Evaluate the equation
         equation.set(result)
@@ -26,11 +37,28 @@ def equalpress():
 
 # Function to clear the input
 def clear():
+    """
+    Clears the current equation in the display.
+    """
     equation.set("")
 
 # Create the display entry box
-entry_box = tb.Entry(root, textvariable=equation, font=("Helvetica", 18), justify="right", bootstyle="info")
-entry_box.grid(row=0, column=0, columnspan=4, ipadx=10, ipady=10, padx=10, pady=10)
+entry_box = tb.Entry(
+    root, 
+    textvariable=equation, 
+    font=("Helvetica", 18), 
+    justify="right", 
+    bootstyle="info"
+)
+entry_box.grid(
+    row=0, 
+    column=0, 
+    columnspan=4, 
+    ipadx=10, 
+    ipady=10, 
+    padx=10, 
+    pady=10
+)
 
 # Create number buttons
 buttons = [
@@ -42,14 +70,41 @@ buttons = [
 
 for (text, row, col) in buttons:
     if text == '=':
-        button = tb.Button(root, text=text, width=5, bootstyle="success", command=equalpress)
+        # Create the '=' button with special styling and command
+        button = tb.Button(
+            root, 
+            text=text, 
+            width=5, 
+            bootstyle="success", 
+            command=equalpress
+        )
     else:
-        button = tb.Button(root, text=text, width=5, bootstyle="secondary", command=lambda t=text: press(t))
+        # Create number/operator buttons with their respective commands
+        button = tb.Button(
+            root, 
+            text=text, 
+            width=5, 
+            bootstyle="secondary", 
+            command=lambda t=text: press(t)
+        )
     button.grid(row=row, column=col, padx=5, pady=5)
 
 # Create clear button
-clear_button = tb.Button(root, text="Clear", width=5, bootstyle="danger", command=clear)
-clear_button.grid(row=5, column=0, columnspan=4, padx=5, pady=10, sticky="nsew")
+clear_button = tb.Button(
+    root, 
+    text="Clear", 
+    width=5, 
+    bootstyle="danger", 
+    command=clear
+)
+clear_button.grid(
+    row=5, 
+    column=0, 
+    columnspan=4, 
+    padx=5, 
+    pady=10, 
+    sticky="nsew"
+)
 
 # Start the application
 root.mainloop()

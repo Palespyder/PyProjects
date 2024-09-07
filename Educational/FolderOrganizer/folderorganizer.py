@@ -15,7 +15,15 @@ if not folder_selected:
     exit()
 
 def organize_files_by_type(base_folder):
-    """Organize files into folders based on their file type (extension)."""
+    """
+    Organize files into folders based on their file type (extension).
+
+    Parameters:
+    - base_folder (str): The path to the base folder to organize.
+
+    Returns:
+    - None
+    """
     
     # Traverse all files and subfolders
     for root_folder, subdirs, files in os.walk(base_folder):

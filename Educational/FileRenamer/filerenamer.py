@@ -18,11 +18,27 @@ if not folder_selected:
 image_extensions = ['.jpg', '.jpeg', '.png', '.gif', '.bmp', '.tiff']
 
 def is_image_file(filename):
-    """Check if a file is an image based on its extension."""
+    """
+    Check if a file is an image based on its extension.
+
+    Parameters:
+    - filename (str): The name of the file to check.
+
+    Returns:
+    - bool: True if the file is an image, False otherwise.
+    """
     return any(filename.lower().endswith(ext) for ext in image_extensions)
 
 def rename_images_in_folder(folder_path):
-    """Rename all image files in the given folder according to the folder name and a number."""
+    """
+    Rename all image files in the given folder according to the folder name and a number.
+
+    Parameters:
+    - folder_path (str): The path to the folder containing images to rename.
+
+    Returns:
+    - None
+    """
     folder_name = os.path.basename(folder_path)
     count = 1
 

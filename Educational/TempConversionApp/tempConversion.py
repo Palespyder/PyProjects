@@ -13,8 +13,17 @@ root.iconbitmap(True, 'img/temp.png')
 root.geometry('500x350')
 
 
-# Create a function for the button
 def ConvertTemp(type: str, temp: float) -> list[float]:
+    """
+    Convert temperature between Celsius, Fahrenheit, and Kelvin.
+
+    Parameters:
+    - type (str): The type of the input temperature ('f' for Fahrenheit, 'c' for Celsius, 'k' for Kelvin).
+    - temp (float): The temperature value to convert.
+
+    Returns:
+    - list[float]: A list containing temperatures in Fahrenheit, Celsius, and Kelvin.
+    """
     if type == "f":
         celsius = float((temp - 32.0) * 5/9)
         kelvin = float((temp - 32.0) * (5/9) + 273.15)
@@ -58,8 +67,10 @@ celcius_img = ImageTk.PhotoImage(Image.open("img/celcius.png").resize((30, 30)))
 farenheit_img = ImageTk.PhotoImage(Image.open("img/farenheit.png").resize((30, 30)))
 kelvin_img = ImageTk.PhotoImage(Image.open("img/kelvin.png").resize((30, 30)))
 
-# Function for button click
 def on_convert():
+    """
+    Handle the conversion of temperature and update the result display.
+    """
     temp = float(tempEntry.get())
     unit = unit_combobox.get().lower()[0]  # Get the first letter of the selected unit
     results = ConvertTemp(unit, temp)

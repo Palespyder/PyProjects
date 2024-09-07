@@ -18,19 +18,24 @@ c.execute('''CREATE TABLE IF NOT EXISTS todo_items (
              )''')
 conn.commit()
 
-# Function to add a new task
 @app.command()
 def add(task: str):
-    """Add a new task."""
+    """
+    Add a new task to the todo list.
+
+    Parameters:
+    - task (str): The description of the task to add.
+    """
     date_added = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     c.execute("INSERT INTO todo_items (date_added, task, status) VALUES (?, ?, ?)", (date_added, task, 'open'))
     conn.commit()
     typer.echo(f"Task '{task}' added!")
 
-# Function to list all tasks
 @app.command()
 def list():
-    """List all tasks."""
+    """
+    List all tasks from the todo list.
+    """
     c.execute("SELECT id, task, status FROM todo_items")
     tasks = c.fetchall()
     
@@ -40,18 +45,26 @@ def list():
     else:
         typer.echo("No tasks found.")
 
-# Function to mark a task as complete
 @app.command()
 def complete(task_id: int):
-    """Mark a task as complete."""
+    """
+    Mark a task as complete.
+
+    Parameters:
+    - task_id (int): The ID of the task to mark as complete.
+    """
     c.execute("UPDATE todo_items SET status = 'complete' WHERE id = ?", (task_id,))
     conn.commit()
     typer.echo(f"Task {task_id} marked as complete!")
 
-# Function to delete a task
 @app.command()
 def delete(task_id: int):
-    """Delete a task."""
+    """
+    Delete a task from the todo list.
+
+    Parameters:
+    - task_id (int): The ID of the task to delete.
+    """
     c.execute("DELETE FROM todo_items WHERE id = ?", (task_id,))
     conn.commit()
     typer.echo(f"Task {task_id} deleted!")
