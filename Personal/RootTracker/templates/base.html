@@ -1,0 +1,33 @@
+<!-- templates/base.html -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}My Django Site{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">  <!-- Link to your CSS file -->
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about/">About</a></li>
+                <li><a href="/contact/">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="content">
+        {% block content %}  <!-- Content specific to each page will be rendered here -->
+        {% endblock %}
+    </div>
+
+    <footer>
+        <p>&copy; 2024 My Django Site</p>
+    </footer>
+
+    <script src="{% static 'js/script.js' %}"></script>  <!-- Link to your JS file -->
+</body>
+</html>
