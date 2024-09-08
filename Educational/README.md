@@ -117,7 +117,7 @@ An application for downloading videos from YouTube. Users can input the URL of a
 
 ---
 
-## Credit Card Validation using Luhn's Algorithm
+## [Credit Card Validation using Luhn's Algorithm](https://github.com/Palespyder/PyProjects/tree/main/Educational/CreditCardValidation)
 **Description:**  
 A project that validates credit card numbers using Luhn's algorithm. Ensures that credit card numbers are correctly formatted and potentially valid.
 
