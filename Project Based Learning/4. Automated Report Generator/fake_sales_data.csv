@@ -1,0 +1,101 @@
+Order_ID,Customer_Name,Customer_Email,Product,Quantity,Price_Per_Unit,Total_Price,Purchase_Date,Payment_Method,Country
+8555e8f8-ba4d-40b3-b22c-c228ea8159b5,Robert Brown,michael59@example.org,Tablet,7,62.84,439.88,2024-03-04,VISA 16 digit,Canada
+ce69ab3d-0aa9-471d-9bd9-c337f0789f6d,Emily Davis,umoody@example.net,Laptop,10,213.3,2133.0,2024-05-27,VISA 19 digit,Japan
+15932ff4-f8a5-4c4b-931d-31fe5e4ef1f7,Jane Doe,matthew66@example.com,Laptop,10,644.58,6445.8,2024-03-27,Diners Club / Carte Blanche,Japan
+beb87284-3cac-4175-b5cc-96fc252b300e,Daniel Walker,dylanburke@example.com,Mouse,9,125.94,1133.46,2024-09-03,Discover,Germany
+a5b657bd-6ca8-423a-81bf-467a55a89ced,Jane Doe,donna78@example.net,Keyboard,7,604.64,4232.48,2024-07-26,JCB 16 digit,USA
+09d57103-f8e3-44c1-a890-4c0a77a44059,Jessica Lewis,xprice@example.org,Mouse,10,249.06,2490.6,2024-01-18,JCB 16 digit,Germany
+efe4478c-ff30-472c-a0da-f618f2bc1b48,Alice Johnson,william79@example.net,Smartphone,9,153.66,1382.94,2024-06-08,Discover,Canada
+c8534668-dffe-4bdb-92f4-3ba5ca611d25,Daniel Walker,jcabrera@example.net,Tablet,3,381.45,1144.35,2024-01-25,VISA 16 digit,Canada
+a2b26439-bc24-45be-a92f-95c850d7688c,Jane Doe,michaelramos@example.net,Tablet,5,397.87,1989.35,2024-05-29,VISA 13 digit,Australia
+3db25c59-2e60-4d9b-bd43-18d4bd39a332,Sarah Miller,robert43@example.com,Monitor,10,933.91,9339.1,2024-01-05,Diners Club / Carte Blanche,Japan
+4d920e35-7f78-4df0-8d9c-c174d7fa4fae,James Clark,olsondiane@example.org,Laptop,2,553.32,1106.64,2024-06-13,VISA 19 digit,France
+cf1c4b14-fc32-40f5-a2aa-9e58933c319e,John Smith,kbrown@example.org,Monitor,5,759.25,3796.25,2024-05-22,Maestro,Canada
+76532db8-a903-44bb-8741-6c62f262e262,John Smith,haaskenneth@example.com,Mouse,1,611.41,611.41,2024-04-13,JCB 16 digit,USA
+fdaa7202-2e14-48b4-88af-4d5bdb6a5fbc,John Smith,ipearson@example.org,Laptop,10,769.1,7691.0,2024-06-03,American Express,France
+1768d559-9e6f-4616-b444-0f9e20073d9b,John Smith,amanda68@example.com,Keyboard,10,130.37,1303.7,2024-07-29,VISA 13 digit,Canada
+d29822a9-33f0-4332-9bbc-ab9160edd3b5,Daniel Walker,kcunningham@example.org,Monitor,9,43.21,388.89,2024-01-03,American Express,France
+0e95c7da-30cb-4efa-854e-c162512bbbb3,Michael Wilson,sarahwebb@example.net,Keyboard,6,343.39,2060.34,2024-03-13,VISA 19 digit,Canada
+cbf3e5b9-11b5-4cb3-b325-e5a3923eacd8,John Smith,dennis48@example.org,Tablet,10,756.17,7561.7,2024-05-05,VISA 19 digit,Japan
+34e56dfc-08e1-40c8-891b-635172745552,Michael Wilson,kwilson@example.org,Keyboard,4,359.79,1439.16,2024-06-09,Mastercard,Germany
+bd2ebfbd-5c59-4250-a2ef-d4665b0bd8d1,Michael Wilson,roseeric@example.org,Keyboard,2,793.29,1586.58,2024-05-19,JCB 16 digit,Australia
+19ab1ebd-2dc3-4bd7-b5a0-675864a37ccf,Jane Doe,victoriachandler@example.com,Laptop,10,447.03,4470.3,2024-02-16,JCB 16 digit,USA
+ebe51a2a-318c-4374-9a4d-d7079589030c,Jane Doe,dunnmichael@example.com,Laptop,2,516.44,1032.88,2024-04-30,Mastercard,Germany
+e6cfa090-d724-43e8-9cb0-bac0f5aeb153,Robert Brown,renee89@example.com,Keyboard,8,331.19,2649.52,2024-09-02,VISA 13 digit,Canada
+e46317fc-cef6-4430-8462-b01b777b4b12,Michael Wilson,rebecca10@example.org,Keyboard,5,475.65,2378.25,2024-01-16,Mastercard,France
+ee042f03-16e9-4bf3-a0cd-63ce3f7dbf9d,Jessica Lewis,chasecameron@example.org,Laptop,5,305.61,1528.05,2024-04-18,Discover,USA
+6993faad-39fa-4626-afd7-c3cf21d6a2ea,Jessica Lewis,xwilson@example.net,Smartphone,10,758.05,7580.5,2024-07-01,VISA 13 digit,Germany
+57c92cc7-f4e8-4420-98b1-7da99f04e625,Daniel Walker,carrie23@example.net,Monitor,2,976.86,1953.72,2024-08-16,Diners Club / Carte Blanche,Germany
+ee5a9276-1e15-4519-a16a-a6d988d599a7,Jessica Lewis,kyle94@example.org,Keyboard,2,255.58,511.16,2024-07-25,JCB 16 digit,Japan
+69ff776f-7fbe-4e9b-a235-d55859514d82,James Clark,melinda02@example.org,Mouse,2,914.09,1828.18,2024-02-12,VISA 16 digit,Germany
+a374568d-0468-4801-a783-3723c07fd31c,Alice Johnson,aaronsmith@example.com,Monitor,9,564.78,5083.02,2024-06-11,JCB 15 digit,Canada
+60033edb-187e-470f-9158-971214fb325e,Alice Johnson,youngronald@example.net,Mouse,4,393.97,1575.88,2024-03-23,JCB 15 digit,Germany
+feefb952-e021-4f59-a31d-1354ef845e20,Daniel Walker,jsimon@example.org,Keyboard,3,646.4,1939.2,2024-01-02,VISA 16 digit,Canada
+8b57db95-618e-4ebb-bcf9-5a02c3a5d72a,Sarah Miller,charlesperkins@example.org,Keyboard,10,102.84,1028.4,2024-03-18,Mastercard,Canada
+6223b9a3-ad3b-43e5-b9cc-d74e78811b57,Daniel Walker,karensparks@example.org,Monitor,8,911.25,7290.0,2024-05-26,JCB 16 digit,Canada
+4febc07b-656b-4426-a4e1-7bdba1c7c293,Robert Brown,rachel43@example.com,Laptop,4,883.12,3532.48,2024-03-01,Maestro,Canada
+917b7fe6-66d5-4d5c-aba3-001fa41f0f1c,Sarah Miller,tina88@example.org,Monitor,3,973.09,2919.27,2024-03-30,American Express,Canada
+a19512d2-aee0-49b0-80a3-91d987385447,Daniel Walker,joannamcgee@example.org,Tablet,9,607.52,5467.68,2024-06-09,Diners Club / Carte Blanche,USA
+4579c747-e46c-4a31-9393-94c42af38c3e,Jane Doe,weavermichelle@example.net,Mouse,2,557.06,1114.12,2024-08-07,Mastercard,Australia
+80a431fa-a121-45bb-842f-6594d9b3abc8,James Clark,tracycarpenter@example.net,Keyboard,3,508.33,1524.99,2024-07-11,VISA 19 digit,USA
+b31a0e4e-3876-4307-8183-02f306dc3f7d,James Clark,caldwellkimberly@example.org,Monitor,7,121.57,850.99,2024-01-15,VISA 16 digit,USA
+5250b713-c997-4e58-b39d-dbfdff84e155,Jane Doe,rebecca58@example.net,Smartphone,7,938.13,6566.91,2024-03-25,JCB 16 digit,USA
+185bcdb8-9dd9-4060-8ba5-65ae3be47f7a,Daniel Walker,alicia82@example.net,Tablet,9,715.2,6436.8,2024-03-12,Diners Club / Carte Blanche,Japan
+9940a09d-7bfa-45ec-84b6-de243433eee3,Emily Davis,osimon@example.org,Smartphone,10,839.94,8399.4,2024-04-26,Mastercard,Germany
+849d4ea2-3cf8-43f5-96d9-0506190aaddf,Robert Brown,wrightlarry@example.org,Monitor,1,36.45,36.45,2024-07-10,Maestro,Japan
+65008f4d-58e1-424b-8c4f-8992c2f05b4e,Jane Doe,leroyhansen@example.com,Monitor,9,785.34,7068.06,2024-02-03,American Express,USA
+d14ad6ad-8185-487e-87fc-43683bfbff4e,John Smith,dylansilva@example.net,Monitor,2,483.75,967.5,2024-05-31,JCB 15 digit,France
+8e176a39-17c3-4f19-a734-407f0c134e13,Daniel Walker,myoung@example.com,Smartphone,3,573.76,1721.28,2024-02-04,Maestro,USA
+46102138-cb62-41be-a21f-8894748183e3,Alice Johnson,andersonbrian@example.com,Laptop,5,226.99,1134.95,2024-07-23,JCB 16 digit,Japan
+f26b4667-c869-455b-ae29-99837312932c,Jessica Lewis,henryjonathan@example.org,Laptop,2,515.02,1030.04,2024-06-13,Maestro,Australia
+27f53130-a26b-4d70-91f7-26cdc102200e,John Smith,christine81@example.com,Keyboard,4,839.42,3357.68,2024-07-24,Discover,USA
+ab43c54b-d25e-4409-87d6-cce0f8a2db55,Michael Wilson,katherinetorres@example.org,Tablet,7,809.76,5668.32,2024-01-03,American Express,Japan
+2211bd40-d5b0-4718-b26f-3ad81a984045,Robert Brown,andrew02@example.org,Tablet,6,902.35,5414.1,2024-03-09,Diners Club / Carte Blanche,USA
+8084962e-b29d-4833-ad4a-b4b619f537cc,Alice Johnson,nicholasarmstrong@example.net,Tablet,4,95.03,380.12,2024-06-16,Maestro,Germany
+a139cc31-e2b8-4193-bd8a-eba3efb7a802,Sarah Miller,wtaylor@example.org,Smartphone,3,758.71,2276.13,2024-05-05,Mastercard,France
+5978992b-2f49-4272-a83d-0437f2937c83,James Clark,kristine60@example.net,Tablet,7,601.66,4211.62,2024-06-22,JCB 15 digit,Canada
+d7660ed8-d7af-483c-af2d-2a9b39ac34a5,Jessica Lewis,robertobishop@example.net,Mouse,8,997.27,7978.16,2024-08-22,Maestro,Germany
+01889310-8b83-41d2-a582-d27a8e353680,James Clark,ralphbrown@example.com,Keyboard,5,337.07,1685.35,2024-03-29,VISA 16 digit,USA
+b9c204b0-56b6-4788-bedf-8dc944d869c8,Sarah Miller,kathrynelliott@example.com,Laptop,5,897.29,4486.45,2024-04-24,Maestro,France
+5177aca9-ba87-4018-9509-ee8bcb5086ee,Jessica Lewis,sgreen@example.org,Mouse,10,82.72,827.2,2024-02-03,Diners Club / Carte Blanche,Australia
+7bfb36db-aa30-4d19-a8fa-bb0a9851a4c3,Daniel Walker,aaronheath@example.com,Monitor,3,514.74,1544.22,2024-08-06,JCB 15 digit,Germany
+6d09a35c-a3b9-439e-b11d-b75717bf5ae7,Jessica Lewis,williamrogers@example.net,Tablet,4,640.87,2563.48,2024-04-19,Maestro,Germany
+7db8b317-3b64-4759-b7b4-b7f2366d8b9d,Alice Johnson,nina30@example.org,Monitor,9,700.43,6303.87,2024-06-14,American Express,Australia
+b65a93ba-5187-43b8-89ce-c893265d6540,Sarah Miller,leonbob@example.net,Mouse,10,894.28,8942.8,2024-09-07,Diners Club / Carte Blanche,Japan
+96af0cc7-63d6-4874-ab86-af25f50ba16f,Robert Brown,timothy68@example.com,Laptop,1,528.34,528.34,2024-06-08,VISA 19 digit,Canada
+034ba782-acef-400d-b710-9b77a43f7e88,Emily Davis,michaelhill@example.net,Smartphone,6,775.15,4650.9,2024-01-21,VISA 19 digit,Canada
+beb6c643-7a55-48c1-8cf9-ae49168ec3ba,Jane Doe,kempbryan@example.com,Laptop,6,395.82,2374.92,2024-01-04,Maestro,Japan
+589196b7-7a18-4510-bf1a-dc4bc7cf4391,Alice Johnson,friedmannicole@example.org,Laptop,5,172.48,862.4,2024-04-25,JCB 15 digit,Japan
+8b6c8ba5-c01c-4733-877a-bc76b69f15fa,John Smith,bmartinez@example.net,Smartphone,4,764.24,3056.96,2024-08-04,JCB 16 digit,Australia
+b0df1255-cb92-4b7f-8340-552f29f0b421,Jessica Lewis,deborah27@example.net,Mouse,6,518.95,3113.7,2024-03-09,VISA 19 digit,Australia
+b0d9274e-0904-4dcb-b36c-7ff2c05fd14d,Jane Doe,pereztammy@example.com,Mouse,5,67.68,338.4,2024-03-17,Mastercard,Canada
+c0aafe44-add8-49d6-95fc-d012e2a31bb3,Sarah Miller,kristenknapp@example.net,Mouse,3,605.97,1817.91,2024-01-18,Mastercard,Canada
+6dd4dea5-f0aa-4897-ac15-d38109a88454,Jane Doe,tammy82@example.net,Laptop,2,352.09,704.18,2024-03-19,American Express,Canada
+da9e8435-5934-4f51-9731-dd587ccba96d,James Clark,karen20@example.org,Laptop,8,794.61,6356.88,2024-01-08,JCB 16 digit,Canada
+e69b0cdc-9121-42d3-9171-264befffc54a,Sarah Miller,webstereric@example.net,Smartphone,5,63.13,315.65,2024-04-30,VISA 16 digit,USA
+0e48b708-15b7-45cb-85a3-873d9f680b2d,Emily Davis,ecastillo@example.net,Mouse,10,365.61,3656.1,2024-07-21,VISA 16 digit,Germany
+e788e3ca-7a6a-45a4-bb9a-fb21b5ca3a25,Sarah Miller,staceyroberts@example.org,Tablet,7,313.78,2196.46,2024-05-11,JCB 15 digit,Canada
+a4097d48-4786-4f63-ad25-50cabaa99fc5,Daniel Walker,victoria71@example.net,Mouse,7,666.95,4668.65,2024-04-11,VISA 13 digit,USA
+63bf7e4f-4e16-490d-97f2-3d8d508b4563,John Smith,jacobgriffith@example.net,Laptop,10,744.03,7440.3,2024-07-03,Discover,USA
+3d75ff08-50fd-4326-8b7c-5640221c52da,Emily Davis,quinncraig@example.net,Mouse,6,273.13,1638.78,2024-02-04,Discover,Canada
+f5dc6493-4b65-4112-908a-88e2ca00c29c,Jessica Lewis,sperry@example.net,Keyboard,6,54.11,324.66,2024-06-11,VISA 16 digit,Japan
+95d68797-997a-46a8-a0da-d546048656f3,John Smith,sandra15@example.org,Laptop,6,971.44,5828.64,2024-04-24,VISA 13 digit,France
+99ea2906-7b84-40c0-a666-87f1cbb48c61,Alice Johnson,sandrapeterson@example.org,Tablet,10,106.25,1062.5,2024-03-03,Diners Club / Carte Blanche,Canada
+ae3613a2-700d-4336-b5be-836c23e07b02,John Smith,melissa20@example.net,Laptop,9,836.27,7526.43,2024-07-03,Mastercard,Canada
+682b5de8-ef0d-4439-b97b-23cd5d703d0c,Jane Doe,thomas45@example.net,Laptop,1,813.65,813.65,2024-07-24,VISA 16 digit,USA
+563c8a54-3fff-4b88-b700-34b31dc19959,Sarah Miller,brentgardner@example.com,Monitor,10,998.66,9986.6,2024-01-09,JCB 15 digit,Canada
+61dd2fb7-2ecb-4a46-89c3-9ed01552834a,Jane Doe,christian13@example.com,Keyboard,5,607.38,3036.9,2024-05-18,JCB 15 digit,Canada
+9b0d26d2-093d-41ef-a99f-5150373ec1e4,John Smith,clarkekaren@example.net,Mouse,3,154.34,463.02,2024-01-09,JCB 16 digit,USA
+ad2d5b52-9c63-41f5-8980-e3a2e8990197,Jessica Lewis,rknight@example.org,Monitor,8,613.69,4909.52,2024-04-22,JCB 15 digit,Canada
+5ff59e0a-7187-4203-9d84-62b1bcfb67ae,Daniel Walker,perezkimberly@example.com,Keyboard,5,886.49,4432.45,2024-07-25,Mastercard,USA
+7d74be2c-df65-45c2-aa15-04383486a6f1,Jane Doe,rachelweber@example.org,Tablet,7,24.03,168.21,2024-01-30,VISA 16 digit,Germany
+70a32900-046c-4c4e-a2d3-55caddb932bb,Alice Johnson,jmoore@example.org,Smartphone,4,214.03,856.12,2024-01-16,Diners Club / Carte Blanche,Canada
+3bdeda30-4e45-4065-9882-016423706d25,Alice Johnson,moorelaurie@example.com,Monitor,3,415.5,1246.5,2024-03-08,Mastercard,France
+e906f02b-3a76-4891-9ac3-430ad620dac6,John Smith,nathanielwhite@example.com,Monitor,7,679.63,4757.41,2024-06-16,American Express,USA
+459dc13d-05d6-4611-9524-d2bbd6c4c6b0,Sarah Miller,opage@example.com,Smartphone,2,923.87,1847.74,2024-08-13,Diners Club / Carte Blanche,France
+1e61600e-7fdd-4485-8a5f-c2631f7f3186,James Clark,joshua70@example.com,Keyboard,1,109.54,109.54,2024-07-22,Discover,Germany
+4264bda9-cafc-41e6-8cf4-b3b3e97e678a,Alice Johnson,kochbrandon@example.org,Keyboard,8,653.53,5228.24,2024-04-16,VISA 16 digit,Canada
+4276f063-3336-42c9-918b-e00bd26c771b,Jane Doe,barberashley@example.org,Keyboard,10,403.1,4031.0,2024-02-18,JCB 15 digit,Japan
+e4860b75-2915-4c34-ab8a-2458ba5b74a3,Alice Johnson,ryanmartinez@example.net,Monitor,3,809.25,2427.75,2024-04-08,JCB 16 digit,Canada
+83dca8fe-870a-4e08-bde5-04dc435be9db,Daniel Walker,opowell@example.net,Monitor,7,818.17,5727.19,2024-03-19,VISA 19 digit,Australia
+065943eb-1ece-4f0b-b7cb-820383c87168,Jane Doe,emilydouglas@example.net,Tablet,4,61.89,247.56,2024-03-13,JCB 15 digit,USA
