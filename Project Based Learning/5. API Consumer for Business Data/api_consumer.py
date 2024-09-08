@@ -40,7 +40,7 @@ currencies = {
     "ZAR": "South African Rand"
 }
 
-KEY = 'fca_live_AZLhVBGf8zDF42ZEy9IIFVWYTquxwOjkftm1rfAB'
+KEY = ''
 URL_BASE = 'https://api.freecurrencyapi.com/v1/latest?apikey='
 
 
