@@ -1,3 +1,2 @@
-Goto the park with Zebbie
-Get a Gallon of Paint
-Program a viral application.
+1. Eat a sammich
+2. Goto the park with Zebbie.
